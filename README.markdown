@@ -1,7 +1,7 @@
 # **Djaneiro for Pycharm** #
 
-This is a port for the Jetbrains' Pycharm IDE of the Djaneiro plugin for  
-Sublime Text.  Kudos to those guys.  Full details and docs can be found at  
+This is a port of the Djaneiro plugin for Sublime Text to Jetbrains'  
+Pycharm IDE.  Kudos to those guys.  Full details and docs can be found at  
 their repo on github: [https://github.com/squ1b3r/Djaneiro](https://github.com/squ1b3r/Djaneiro)
 
 It's basically just a bunch of convenient abbreviations.  To be honest, I  
