@@ -35,15 +35,15 @@ uninstall.
 
 ## Installation ##
 
-1 Clone this repo or just download the `settings.jar` file.
+1. Clone this repo or just download the `settings.jar` file.
 
-2 In Pycharm navigate to `File -> Import Settings ...`
+2. In Pycharm navigate to `File -> Import Settings ...`
 
-3 Open the `settings.jar` file that you just downloaded or its containing dir 
+3. Open the `settings.jar` file that you just downloaded or its containing dir 
 
-4 Restart pycharm.
+4. Restart pycharm.
 
-5 Follow the instructions on [squ1b3r's repo](https://github.com/squ1b3r/Djaneiro)
+5. Follow the instructions on [squ1b3r's repo](https://github.com/squ1b3r/Djaneiro)
 
 ## Changelog
 
