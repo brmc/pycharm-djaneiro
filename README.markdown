@@ -1,13 +1,13 @@
 # **Djaneiro for Pycharm** #
 
 This is a port of the Djaneiro plugin for Sublime Text to Jetbrains'  
-Pycharm IDE.  Kudos to those guys.  Full details and docs can be found at  
+Pycharm IDE.  Kudos to those guys.  Full details and docs can be found at    
 their repo on github: [https://github.com/squ1b3r/Djaneiro](https://github.com/squ1b3r/Djaneiro)
 
-It's basically a collection of convenient abbreviations encountered when
-building Django applications (with a couple generic python uses) specifically
-aimed at models, forms, views, templates, properties, basic python objects,
-and other commonly typed patterns.
+It's basically a collection of convenient abbreviations encountered when  
+building Django applications (with a couple generic python uses) specifically  
+aimed at models, forms, views, templates, properties, basic python objects,  
+and other commonly typed patterns.  
 
 ## Contents
 
@@ -21,7 +21,7 @@ and other commonly typed patterns.
 
 * computer
 
-* pycharm or jetbrains IDE with python plugin.  (pycharm professional or 
+* pycharm or jetbrains IDE with python plugin.  (pycharm professional or  
 intellij ultimate is required to recognize the django-template context) 
   
 * electricity
