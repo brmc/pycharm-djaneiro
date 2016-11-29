@@ -1,0 +1,60 @@
+<idea-plugin version="2">
+    <id>pw.mcclure.djaneiro.pycharm</id>
+    <name>Djaneiro for PyCharm</name>
+    <version>1.0</version>
+    <vendor email="jetbrains@mcclure.pw" url="https://www.mcclure.pw">Brian McClure</vendor>
+
+    <description><![CDATA[
+      <p>This is a port of the Djaneiro plugin for Sublime Text (Kudos to those guys. Full details and docs can be found at
+    their repo on github: <a href='https://github.com/squ1b3r/Djaneiro'>https://github.com/squ1b3r/Djaneiro</a>)</p>
+
+    <p>Source code for this plugin: <a href='https://github.com/brmc/pycharm-djaneiro'>https://github.com/brmc/pycharm-djaneiro</a></p>
+
+    <p>It's basically a collection of convenient abbreviations encountered when
+    building Django applications (with a couple generic python uses) specifically
+    aimed at models, forms, views, templates, properties, basic python objects,
+    and other commonly typed patterns.</p>
+
+    <p>For example, assuming '-->' means 'expands to', the following expansions
+    for models and forms can be made:
+    </p>
+
+    <pre><code>
+    mchar --> $FIELDNAME$ = models.CharField($name$ , max_length=50)$END$
+    fchar --> $FIELDNAME$ = forms.CharField($ARGS$)$END$
+    </code></pre>
+
+
+    <p>Where each variable between dollar signs($) (e.g., $FIELDNAME$, $NAME$, etc)
+    is a stopping point for the cursor each time enter is pressed.</p>
+
+    <p>The naming convention is generally 'm' or 'f' for 'model' or 'field,'
+    respectively, followed by a shortened version of the field name
+    (with some intuitive exceptions: fk, m2m, o2o).  </p>
+
+    <p> Examples of other types of templates for other contexts are:
+    <pre><code>
+    ifelse --> {% if %} $START$ {% else %} $STOP$ {% endif %} $END$
+    Model --> (this generates a skeleton for a simple model class)
+    npdb --> from nose.tools import set_trace; set_trace()
+    And a bunch more...
+    </code></pre>
+
+    ]]></description>
+
+    <change-notes><![CDATA[
+    v1.0 -
+      No changes since I originally commited to my github repo, which means there
+      is no support for new fields added in the last 2 years.
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="141.0"/>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <defaultLiveTemplatesProvider implementation="DjangoTemplateProvider"/>
+    </extensions>
+
+</idea-plugin>
