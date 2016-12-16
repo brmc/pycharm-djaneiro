@@ -1,7 +1,7 @@
 ## Model Fields
 
 * mbigauto
-* mcsi
+* mcsi ----- no
 * mbin
 * mdur
 * mip -> mgip?

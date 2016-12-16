@@ -1,0 +1,9 @@
+<templateSet group="Djaneiro:  Postgres">
+    <template name="marray" value="$VAR$ = fields.ArrayField($VAR2$, size=$VAR3$$VAR4$)$END$" toReformat="false" toShortenFQNames="true">
+        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+        <variable name="VAR2" expression="" defaultValue="&quot;BASEFIELD&quot;" alwaysStopAt="true" />
+        <context>
+            <option name="" value="true" />
+        </context>
+    </template>
+</templateSet>
