@@ -39,7 +39,27 @@ https://docs.djangoproject.com/en/1.10/ref/contrib/postgres/fields/
 * fip -> fgip?
 * fuuid
 * fsplit
-* 
+*
+
+## Widgets
+
+* wtext
+* wnum
+* wemail
+* wurl
+* wpass
+* whidden
+* wdate
+* wdatetime
+* wtime
+* wtextarea
+* wcheck
+* wselect
+* wnullbool
+* welectmulti
+* wradio
+* wfile
+* wclearable
 
 ## Meta
 

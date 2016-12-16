@@ -1,0 +1,12 @@
+- name: mauto
+  raw: $var$ = models.AutoField($var$)$end$
+  template: ./pussy.py
+  vars:
+    - name: VAR
+      default: FIELDNAME
+    - name: VAR2
+  context:
+    - name: Python
+
+- name: mbigint
+  template: /home/brian/dev/jetbrains/pycharm-djaneiro/test.txt
