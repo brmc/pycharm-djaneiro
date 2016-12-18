@@ -7,8 +7,8 @@ from xml.etree import ElementTree
 
 import collections
 
-from ..templategenerator import SnippetGenerator, TemplateDefinition, \
-    VariableDefinition
+from ..transpiler import Transpiler
+from shortbus.components import VariableDefinition, TemplateDefinition
 
 try:
     from yaml import CLoader as Loader, CDumper as Dumper, dump
@@ -20,21 +20,24 @@ class GeneratorTest(TestCase):
     def setUp(self):
         self.directory = os.path.dirname(os.path.realpath(__file__))
         self.valid_yml_path = os.path.join(
-            self.directory, 'yml', 'valid.yml')
+            self.directory, 'data', 'valid.yml')
         self.warning_yml_path = os.path.join(
-            self.directory, 'yml', 'warns.yml')
+            self.directory, 'data', 'warns.yml')
         self.jetbrains_xml = os.path.join(
-            self.directory, 'yml', 'jetbrains.xml')
+            self.directory, 'data', 'jetbrains.xml')
 
-        self.sublime_xml = os.path.join(self.directory, 'yml')
+        self.data_dir = os.path.join(self.directory, 'data')
 
-        self.generator = SnippetGenerator('Djaneiro: Models').import_from_yml(self.valid_yml_path)
+        self.generator = Transpiler('Djaneiro: Models').import_from_yml(self.valid_yml_path)
 
-        self.yml_templates = SnippetGenerator().import_from_yml(
+        self.yml_templates = Transpiler().import_from_yml(
             self.valid_yml_path).yml_templates
 
-        self.xml_templates = SnippetGenerator().import_from_jetbrains_format(
+        self.xml_templates = Transpiler().import_from_jetbrains_format(
             self.jetbrains_xml).jetbrains_templates
+
+    def tearDown(self):
+        pass
 
     def test_default_values_for_template_and_raw(self):
         variables = {
@@ -85,7 +88,7 @@ class GeneratorTest(TestCase):
 
     def test_variable_typo_throws_warning(self):
         with self.assertWarns(Warning):
-            SnippetGenerator().import_from_yml(self.warning_yml_path)
+            Transpiler().import_from_yml(self.warning_yml_path)
 
     def test_create_from_jetbrains_format(self):
         tpl = self.xml_templates['mauto']
@@ -118,11 +121,12 @@ class GeneratorTest(TestCase):
             }
         )
 
-        generator = SnippetGenerator(group)
+        generator = Transpiler(group)
         generator.yml_templates = {'mauto': a}
 
         generator.merge_all_templates()
-        a = generator.export_to_jetbrains('bullshit.xml')
+        path = os.path.join(self.data_dir, 'bullshit.xml')
+        a = generator.export_to_jetbrains(path)
         b = ElementTree.parse(self.jetbrains_xml).getroot()
 
         self.assertEqual(a.tag, b.tag)
@@ -146,12 +150,14 @@ class GeneratorTest(TestCase):
                              sorted(b.items()))
 
     def test_import_from_sublime(self):
-        a = SnippetGenerator('test')
+        a = Transpiler('test')
         path = '/home/brian/dev/jetbrains/pycharm-djaneiro/sublime/Models'
         obj = a.import_from_sublime_format(path)
 
         obj.merge_all_templates()
-        obj.export_to_jetbrains('monkey.xml')
-        obj.export_to_yml('stupid.yml')
+        path = os.path.join(self.data_dir, 'monkey.xml')
+        obj.export_to_jetbrains(path)
+        path = os.path.join(self.data_dir, 'stupid.yml')
+        obj.export_to_yml(path)
         self.assertEqual("a", obj.sublime_templates['mauto'].value)
 

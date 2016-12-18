@@ -1,21 +1,9 @@
-#!/usr/bin/env python3.5
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import glob
-import os
 import re
 import warnings
-#from lxml import etree as ElementTree
-from collections import OrderedDict
 from functools import wraps
-
-from lxml import etree as ElementTree
-
-
-from yaml import load, dump
-try:
-    from yaml import CLoader as Loader, CDumper as Dumper
-except ImportError:
-    from yaml import Loader, Dumper
+from xml import etree
 
 
 def warn_if_missing_templates(func):
@@ -51,7 +39,7 @@ class VariableDefinition(object):
     def __init__(self, name, defaultValue='', expression='',
                  alwaysStopAt=True):
         self.name = name
-        self.defaultValue = defaultValue
+        self.defaultValue = defaultValue.strip('"\'')
         self.expression = expression
         self.alwaysStopAt = alwaysStopAt
 
@@ -190,8 +178,6 @@ class TemplateDefinition(object):
 
             variables[variable_name] = VariableDefinition(**variable)
 
-
-
         return TemplateDefinition(
             name=name,
             value=value,
@@ -216,11 +202,7 @@ class TemplateDefinition(object):
         toReformat = boolean_converter[toReformat]
         toShortenFQNames = boolean_converter[toShortenFQNames]
 
-        variables = [VariableDefinition(
-            name=var.attrib['name'],
-            defaultValue=var.attrib['defaultValue'].replace('"', ''),
-            expression=var.attrib['expression']
-        ) for var in raw_vars]
+        variables = [VariableDefinition(**var.attrib) for var in raw_vars]
 
         variables = {var.name: var for var in variables}
 
@@ -244,7 +226,7 @@ class TemplateDefinition(object):
         )
 
     @staticmethod
-    def build_from_snippet(xml: ElementTree):
+    def build_from_snippet(xml: etree):
         name = xml.findtext('tabTrigger')
         content = xml.findtext('content')
 
@@ -264,7 +246,7 @@ class TemplateDefinition(object):
             context_options=[context])
 
 
-def parse_and_extract_variables(string, regex, variables=None):
+def parse_and_extract_variables(string: str, regex: str, variables=None):
     pattern = re.compile(regex)
     matches = pattern.findall(string)
     variables = variables or {}
@@ -292,111 +274,3 @@ def parse_and_extract_variables(string, regex, variables=None):
     string = string.replace("$:$", "$$")
 
     return string, variables
-
-
-class SnippetGenerator(object):
-    templates = {}
-
-    def __init__(self, name="Template Group"):
-        self.name = name
-        self.jetbrains_templates = {}
-        self.yml_templates = {}
-        self.sublime_templates = {}
-
-    def import_from_yml(self, path: str):
-        """
-        :param path:
-        :return:
-        """
-        stream = open(path)
-        data = load(stream, Loader=Loader)
-        stream.close()
-
-        templates = [TemplateDefinition.build_from_yml(x) for x in data]
-
-        templates.sort(key=lambda x: x.name.lower())
-
-        templates = OrderedDict([(template.name, template) for template in templates])
-
-        self.yml_templates = templates
-
-        return self
-
-    def import_from_sublime_format(self, path):
-        if os.path.isdir(path):
-            path = os.path.join(path, '**', '*.sublime-snippet')
-
-        files = glob.glob(path, recursive=True)
-
-        xml = [ElementTree.parse(file).getroot() for file in files]
-
-        templates = [TemplateDefinition.build_from_snippet(child)
-                     for child in xml]
-
-        templates.sort(key=lambda x: x.name.lower())
-        templates = OrderedDict([(template.name, template) for template in templates])
-
-        self.sublime_templates = templates
-
-        return self
-
-    def import_from_jetbrains_format(self, path):
-        xml = ElementTree.parse(path).getroot()
-        self.name = xml.attrib['group']
-
-        templates = [TemplateDefinition.build_from_xml(child)
-                     for child in xml]
-        templates.sort(key=lambda x: x.name.lower())
-        templates = OrderedDict([(template.name, template)
-                                 for template in templates])
-
-        self.jetbrains_templates = templates
-
-        return self
-
-    #@warn_if_missing_templates
-    def export_to_jetbrains(self, output_path):
-        template_set = ElementTree.Element('templateSet')
-        template_set.attrib['group'] = self.name
-
-        for key, template in self.templates.items():
-            xml_template = ElementTree.SubElement(
-                template_set,
-                'template',
-                template.to_jetbrains_dict())
-
-            for key, var in template.variables.items():
-                ElementTree.SubElement(
-                    xml_template,
-                    'variable',
-                    var.to_jetbrains_dict())
-
-            context = ElementTree.SubElement(xml_template, 'context')
-
-            for option in template.context_options:
-                ElementTree.SubElement(
-                    context,
-                    'option',
-                    option.to_jetbrains_dict())
-
-        tree = ElementTree.ElementTree(template_set)
-
-        tree.write(output_path, pretty_print=True)
-        return template_set
-
-    @warn_if_missing_templates
-    def export_to_yml(self, output_path):
-        stream = open(output_path, 'w')
-        tpls = [tpl.to_yml_dict() for tpl in self.templates.values()]
-        dump(tpls, stream, Dumper=Dumper, default_flow_style=False)
-        stream.close()
-
-        return self
-
-    def merge_all_templates(self):
-        self.templates = {
-            **{**self.sublime_templates, **self.jetbrains_templates},
-            **self.yml_templates
-        }
-
-        return self

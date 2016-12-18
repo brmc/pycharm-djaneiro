@@ -2,7 +2,7 @@
   raw: $var$ = models.AutoField($var$)$end$
 
 - name: template
-  template: ./shortbus/tests/yml/template.txt
+  template: ./shortbus/tests/data/template.txt
 
 - name: bah
   raw: $weep$ $graa:nah$ $weep:$ $:ni$ $ni$ $$
