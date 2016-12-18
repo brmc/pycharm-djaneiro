@@ -1,0 +1,3 @@
+[submodule "sublime"]
+	path = sublime
+	url = git@github.com:squ1b3r/Djaneiro.git
