@@ -1,10 +1,8 @@
 ## Model Fields
 
 * mbigauto
-* mcsi ----- no
 * mbin
-* mdur
-* mip -> mgip?
+* fip -> fgip?
 * X-> musstates?
 * x-> phone?
 
@@ -32,13 +30,11 @@ https://docs.djangoproject.com/en/1.10/ref/contrib/postgres/fields/
 
 ## Form fields
 
-* fbool
-* ftyped
 * x -> combo?
 * fdur
 * fip -> fgip?
 * fuuid
-* fsplit
+* fsplit?
 *
 
 ## Widgets

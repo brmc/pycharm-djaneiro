@@ -27,7 +27,6 @@
             <option name="" value="true" />
         </context>
     </template>
-
     <template name="mbool" value="$VAR$ = models.BooleanField($VAR2$)" toReformat="false" toShortenFQNames="true">
         <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
         <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
