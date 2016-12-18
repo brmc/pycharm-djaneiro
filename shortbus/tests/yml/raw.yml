@@ -13,4 +13,4 @@
       always_stop_at: False
 
   to_format: False
-  to_shorten_fq_names: False
+  toShortenFQNames: False

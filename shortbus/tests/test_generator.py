@@ -26,12 +26,14 @@ class GeneratorTest(TestCase):
         self.jetbrains_xml = os.path.join(
             self.directory, 'yml', 'jetbrains.xml')
 
-        self.generator = SnippetGenerator('Djaneiro: Models').create_from_yml(self.valid_yml_path)
+        self.sublime_xml = os.path.join(self.directory, 'yml')
 
-        self.yml_templates = SnippetGenerator().create_from_yml(
+        self.generator = SnippetGenerator('Djaneiro: Models').import_from_yml(self.valid_yml_path)
+
+        self.yml_templates = SnippetGenerator().import_from_yml(
             self.valid_yml_path).yml_templates
 
-        self.xml_templates = SnippetGenerator().create_from_jetbrains_format(
+        self.xml_templates = SnippetGenerator().import_from_jetbrains_format(
             self.jetbrains_xml).jetbrains_templates
 
     def test_default_values_for_template_and_raw(self):
@@ -40,10 +42,10 @@ class GeneratorTest(TestCase):
             'end': VariableDefinition('end')
         }
 
-        expands_to = '$var$ = models.AutoField($var$)$end$'
+        value = '$var$ = models.AutoField($var$)$end$'
         default = TemplateDefinition(
             name='raw',
-            expands_to=expands_to,
+            value=value,
             variables=variables,
         )
 
@@ -51,14 +53,14 @@ class GeneratorTest(TestCase):
 
         self.assertEqual(default, template)
 
-        expands_to = '$moo$\n$joo$'
+        value = '$moo$\n$joo$'
 
         variables = {
             'moo': VariableDefinition('moo'),
             'joo': VariableDefinition('joo')
         }
 
-        default.expands_to = expands_to
+        default.value = value
         default.variables = variables
         default.name = 'template'
 
@@ -67,37 +69,37 @@ class GeneratorTest(TestCase):
         self.assertEqual(default, template)
 
     def test_variable_default_definitions(self):
-        expands_to = '$weep$ $graa:nah$ $weep:$ $:ni$ $ni$ $$'
+        value = '$weep$ $graa:nah$ $weep:$ $:ni$ $ni$ $$'
 
         template = self.yml_templates['bah']
         variables = template.variables
 
-        self.assertEqual(variables['weep'].default, 'suckit')
-        self.assertEqual(variables['graa'].default, 'hard')
-        self.assertEqual(variables['VAR3'].default, 'ni')
-        self.assertEqual(variables['ni'].default, '')
+        self.assertEqual(variables['weep'].defaultValue, 'suckit')
+        self.assertEqual(variables['graa'].defaultValue, 'hard')
+        self.assertEqual(variables['VAR3'].defaultValue, 'ni')
+        self.assertEqual(variables['ni'].defaultValue, '')
 
+        self.assertEqual(template.value, '$weep$ $graa$ $weep$ $VAR3$ $ni$ $$')
         self.assertEqual(len(variables), 4)
 
-        self.assertEqual(template.expands_to, '$weep$ $graa$ $weep$ $VAR3$ $ni$ $$')
 
     def test_variable_typo_throws_warning(self):
         with self.assertWarns(Warning):
-            SnippetGenerator().create_from_yml(self.warning_yml_path)
+            SnippetGenerator().import_from_yml(self.warning_yml_path)
 
     def test_create_from_jetbrains_format(self):
         tpl = self.xml_templates['mauto']
 
         variables = {
-            'VAR': VariableDefinition(name='VAR', default='FIELDNAME'),
+            'VAR': VariableDefinition(name='VAR', defaultValue='FIELDNAME'),
             'VAR2': VariableDefinition(name='VAR2')
         }
 
         template = TemplateDefinition(
             name='mauto',
-            expands_to='$VAR$ = models.AutoField($VAR2$)',
-            to_reformat=False,
-            to_shorten_fq_names=True,
+            value='$VAR$ = models.AutoField($VAR2$)',
+            toReformat=False,
+            toShortenFQNames=True,
             variables=variables
         )
 
@@ -107,9 +109,9 @@ class GeneratorTest(TestCase):
         group = 'Djaneiro: Models'
         a = TemplateDefinition(
             name='mauto',
-            expands_to='$VAR$ = models.AutoField($VAR2$)',
-            to_reformat=False,
-            to_shorten_fq_names=True,
+            value='$VAR$ = models.AutoField($VAR2$)',
+            toReformat=False,
+            toShortenFQNames=True,
             variables={
                 'VAR': VariableDefinition('VAR', 'FIELDNAME'),
                 'VAR2': VariableDefinition('VAR2')
@@ -119,8 +121,8 @@ class GeneratorTest(TestCase):
         generator = SnippetGenerator(group)
         generator.yml_templates = {'mauto': a}
 
+        generator.merge_all_templates()
         a = generator.export_to_jetbrains('bullshit.xml')
-
         b = ElementTree.parse(self.jetbrains_xml).getroot()
 
         self.assertEqual(a.tag, b.tag)
@@ -135,13 +137,21 @@ class GeneratorTest(TestCase):
             self.assertEqual(sorted(a.items()),
                              sorted(b.items()))
 
-        options_a = template_a.findall('context')[0].findall('option')
-        options_b = template_b.findall('context')[0].findall('option')
+        options_a = template_a.find('context').findall('option')
+        options_b = template_b.find('context').findall('option')
 
         options = zip(options_a, options_b)
         for a, b in options:
             self.assertEqual(sorted(a.items()),
                              sorted(b.items()))
 
+    def test_import_from_sublime(self):
+        a = SnippetGenerator('test')
+        path = '/home/brian/dev/jetbrains/pycharm-djaneiro/sublime/Models'
+        obj = a.import_from_sublime_format(path)
 
+        obj.merge_all_templates()
+        obj.export_to_jetbrains('monkey.xml')
+        obj.export_to_yml('stupid.yml')
+        self.assertEqual("a", obj.sublime_templates['mauto'].value)
 

@@ -10,14 +10,14 @@
   context:
     - name: bong
     - value: False
-  vars:
+  variables:
     - name: weep
-      default: suckit
+      defaultValue: suckit
     - name: graa
-      default: hard
+      defaultValue: hard
       expression: i have no idea what this is for
-      always_stop_at: False
+      alwaysStopAt: False
 
 
-  to_reformat: False
-  to_shorten_fq_names: False
+  toReformat: False
+  toShortenFQNames: False
