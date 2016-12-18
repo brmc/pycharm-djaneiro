@@ -1,7 +1,7 @@
 <templateSet group="Djaneiro: Models">
   <template name="mauto" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.AutoField($VAR2$)">
-    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
     <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
     <context>
       <option name="Python" value="true"/>
     </context>

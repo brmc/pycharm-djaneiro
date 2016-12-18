@@ -101,11 +101,6 @@ class GeneratorTest(TestCase):
             variables=variables
         )
 
-        print(tpl.variables['VAR'].__dict__)
-        print(template.variables['VAR'].__dict__)
-
-        print(tpl.context_options[0].__dict__)
-        print(template.context_options[0].__dict__)
         self.assertEqual(tpl, template)
 
     def test_jetbrains_export(self):
