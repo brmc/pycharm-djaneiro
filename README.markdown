@@ -179,7 +179,6 @@ to the group you want to modify in `modifications/`:
 |:-----------------|:-----------|  
 | Djaneiro_Forms.xml | modifications/Forms.yml |
 | Djaneiro_Models.xml | modifications/Models.yml |
-| Djaneiro_Poop.xml | modifications/Poop.yml |
 | Djaneiro_Python.xml | modifications/Python.yml |
 | Djaneiro_Templates.xml | modifications/Templates.yml |
 | Djaneiro_Views.xml | modifications/Views.yml |
