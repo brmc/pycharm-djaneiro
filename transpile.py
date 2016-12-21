@@ -6,6 +6,8 @@ from sys import argv
 
 from shortbus.transpiler import Transpiler
 
+print(argv)
+
 if __name__ == '__main__':
     jb_root = os.path.join('plugin', 'resources', 'liveTemplates')
     jb_file = 'Djaneiro_{}.xml'
@@ -14,7 +16,32 @@ if __name__ == '__main__':
     sub_root = 'sublime'
     mod_root = 'modifications'
 
+    source = argv[1].lower()
+
+    all_sources = ['all', 'jetbrains', 'sublime', 'modifications']
+
+    if source not in all_sources:
+        raise Exception('{} is not a valid source.  The first parameter '
+                        'should one of these: {}'.format(source, all_sources))
+
+    sources = all_sources[1:] if source == 'all' else [source]
+
+    targets = argv[2:]
+
+    groups_for_source = {
+        'all': ['Forms', 'Models', 'Python', 'Templates', 'Views'],
+        'jetbrains': ['Completions', 'Forms', 'Models', 'Python', 'Templates', 'Views'],
+        'sublime': ['Forms', 'Models', 'Python', 'Templates', 'Views'],
+        'modifications': ['Completions', 'Forms', 'Models', 'Python', 'Templates', 'Views', 'Postgres', 'Widgets']
+    }
+
+    if targets == []:
+        targets = groups_for_source[source]
+
     groups = {
+        'Completions': {
+            'jetbrains':   os.path.join(jb_root, jb_file.format('Completions')),
+        },
         'Forms': {
             'jetbrains': os.path.join(jb_root, jb_file.format('Forms')),
             'sublime': os.path.join(sub_root, 'Forms'),
@@ -39,20 +66,22 @@ if __name__ == '__main__':
             'jetbrains': os.path.join(jb_root, jb_file.format('Templates')),
             'sublime': os.path.join(sub_root, 'html'),
             'modifications': os.path.join(mod_root, 'Templates.yml')
+        },
+        'Postgres': {
+            'modifications': os.path.join(mod_root, 'Postgres.yml')
+        },
+        'Widgets': {
+            'modifications': os.path.join(mod_root, 'Widgets.yml')
         }
     }
 
     output_path = os.path.join(mod_root, 'output')
     yml_output_path = os.path.join(output_path, 'yml')
 
-    if len(argv[1:]) == 0 or 'all' in argv[2:]:
-        argv += groups.keys()
 
-    for arg in argv[1:]:
-        if arg == 'all':
-            continue
-        if arg.lower().startswith('custom='):
-            path = arg.split('=')[-1]
+    for group in targets:
+        if group.lower().startswith('custom='):
+            path = group.split('=')[-1]
             file = os.path.split(path)[-1]
             name = file.split('.')[0]
             output_file = os.path.join(
@@ -66,26 +95,27 @@ if __name__ == '__main__':
 
             continue
 
-        paths = groups.get(arg, {})
-        print(paths)
+        paths = groups.get(group, {})
 
         if paths == {}:
             warnings.warn('Invalid parameter: {}.  Must be Forms, Models, '
-                          'Views, Python, or Templates. skipping...'.format(arg))
+                          'Views, Python, or Templates. skipping...'.format(group))
             continue
 
-        template_group = group_format.format(arg)
-        output_file = os.path.join(output_path, jb_file.format(arg))
-        yml_output_file = os.path.join(yml_output_path, yml_file.format(arg))
+        template_group = group_format.format(group)
+        output_file = os.path.join(output_path, jb_file.format(group))
+        yml_output_file = os.path.join(yml_output_path, yml_file.format(group))
         transpiler = Transpiler(template_group)
 
-        for type, path in paths.items():
-            if type == 'jetbrains':
-                transpiler.import_from_jetbrains_format(path)
-            elif type == 'sublime':
-                transpiler.import_from_sublime_format(path)
-            elif type == 'modifications':
-                transpiler.import_from_yml(path)
+        for source in sources:
+            if source == 'jetbrains':
+                transpiler.import_from_jetbrains_format(paths[source])
+            elif source == 'sublime':
+                transpiler.import_from_sublime_format(paths[source])
+            elif source == 'modifications':
+                transpiler.import_from_yml(paths[source])
+                transpiler.merge_all_templates()
+                transpiler.export_to_markdown(group, 'modifications/output/markdown')
 
         transpiler.merge_all_templates()
         transpiler.export_to_jetbrains(output_file).export_to_yml(yml_output_file)

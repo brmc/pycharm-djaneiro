@@ -1,0 +1,33 @@
+- name: marray
+  raw: $:FIELDNAME$ = fields.ArrayField(base_field=$$, size=$:None$)$END$
+- name: mhstore
+  raw: $:FIELDNAME$ = fields.HStoreField($$)$END$
+- name: mjson
+  raw: $:FIELDNAME$ = fields.JSONField($$)$END$
+- name: mintrange
+  raw: $:FIELDNAME$ = fields.IntegerRangeField($$)$END$
+- name: mbigintrange
+  raw: $:FIELDNAME$ = fields.BigIntegerRangeField($$)$END$
+- name: mfloatrange
+  raw: $:FIELDNAME$ = fields.FloatRangeField($$)$END$
+- name: mdatetimerange
+  raw: $:FIELDNAME$ = fields.DateTimeRangeField($$)$END$
+- name: mdaterange
+  raw: $:FIELDNAME$ = fields.DateRangeField($$)$END$
+- name: farray
+  raw: $:FIELDNAME$ = SimpleArrayField(base_field=$$, max_length=$:None$, min_length=$:None$)$END$
+- name: fsplitarray
+  raw: $:FIELDNAME$ = SplitArrayField(base_field=$$, size=$$, remove_trailing_nulls=$:False$)$END$
+- name: fhstore
+  raw: $:FIELDNAME$ = HStoreField($$)$END$
+- name: fjson
+  raw: $:FIELDNAME$ = JSONField($$)$END$
+- name: fintrange
+  raw: $:FIELDNAME$ = IntegerRangeField(min_value=$:None$, max_value=$:None$)$END$
+- name: ffloatrange
+  raw: $:FIELDNAME$ = FloatRangeField(min_value=$:None$, max_value=$:None$)$END$
+- name: fdatetimerange
+  raw: $:FIELDNAME$ = DateTimeRangeField(min_value=$:None$, max_value=$:None$)$END$
+- name: fdaterange
+  raw: $:FIELDNAME$ = DateRangeField(min_value=$:None$, max_value=$:None$)$END$
+

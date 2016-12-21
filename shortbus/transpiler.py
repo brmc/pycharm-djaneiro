@@ -120,6 +120,19 @@ class Transpiler(object):
 
         return self
 
+    def export_to_markdown(self, group, output_path: str) -> 'Transpiler':
+        output_file = os.path.join(output_path, self.name + '.markdown')
+
+        line_format = '|{}|{}|\n'
+
+        with open(output_file, 'w') as file:
+            file.write('###' + group + '\n\n')
+            file.write(line_format.format('abbreviation', 'template'))
+            file.write(line_format.format(':--', ':--'))
+
+            for _,template in self.templates.items():
+                file.write(line_format.format(template.name, template.value))
+
     @warn_if_missing_templates
     def export_to_yml(self, output_path: str) -> 'Transpiler':
         stream = open(output_path, 'w')

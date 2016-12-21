@@ -1,0 +1,98 @@
+<templateSet group="Djaneiro: Postgres">
+  <template name="farray" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = SimpleArrayField(base_field=$$, max_length=$:None$, min_length=$:None$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fdaterange" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = DateRangeField(min_value=$:None$, max_value=$:None$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fdatetimerange" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = DateTimeRangeField(min_value=$:None$, max_value=$:None$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="ffloatrange" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = FloatRangeField(min_value=$:None$, max_value=$:None$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fhstore" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = HStoreField($$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fintrange" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = IntegerRangeField(min_value=$:None$, max_value=$:None$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fjson" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = JSONField($$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fsplitarray" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = SplitArrayField(base_field=$$, size=$$, remove_trailing_nulls=$:False$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="marray" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = fields.ArrayField(base_field=$$, size=$:None$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mbigintrange" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = fields.BigIntegerRangeField($$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mdaterange" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = fields.DateRangeField($$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mdatetimerange" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = fields.DateTimeRangeField($$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mfloatrange" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = fields.FloatRangeField($$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mhstore" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = fields.HStoreField($$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mintrange" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = fields.IntegerRangeField($$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mjson" toReformat="true" toShortenFQNames="true" value="$VAR1$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME$ = fields.JSONField($$)$END&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+</templateSet>

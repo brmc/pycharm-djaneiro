@@ -26,8 +26,8 @@ basic python objects, and other commonly typed patterns.
 * [Additional abbreviations](additional-abbreviations)
   * [Models](#models)
   * [Forms](#forms)
-  * [Widgets](#widgts)
   * [Postgres](#postgres)
+  * [Widgets](#widgts)
 
 
 ## Requirements ##
@@ -49,7 +49,16 @@ The plugin can be installed directly from the jetbrains plugin repositories
 
 ### v1.1
 
-*
+* Updated templates from upstream
+* Included missing fields for models and forms
+* Added Postgres model and form fields
+* Added Widgets
+* Added transpiler to convert between sublime text and jetbrains
+* Created yml format to write live templates
+
+Minor changes:
+
+* Added $END$ variables to all templates
 
 ### v1.0
 
@@ -75,7 +84,13 @@ included with the original plugin
 
 ### Transpiler
 
-**The transpiler requires `python3.5+`**
+**The transpiler isn't really stable.  proceed at your own risk**
+
+requirements: 
+
+    python3.5+  
+    pyyaml   
+    lxml  
 
 #### YML Template Syntax
 
@@ -162,15 +177,17 @@ section supersede implicit definitions in `raw` or `template`
 
 #### Command line usage
 
-    python3.5 transpile.py [all] [Models] [Views] [Forms] [Templates] [Python] [custom=path/to/file.xml]
+    python3.5 transpile.py [all|jetbrains|sublime|modifications] [Models] [Views] [Forms] [Templates] [Python] [custom=path/to/file.xml]
 
-Each of the command line options (except `all` and `custom`) corresponds  
- to a group of snippets/live templates for Sublime text and PyCharm. 
- 
- The Sublime Text snippets will be transpiled first being overwritten  
-  by the jetbrains templates afterwards.  This is so changes from  
+The first command parameter determines the import source of the templates.  
+If `all` is passed, sublime text templates will be imported first,  
+followed by and overwritten by jetbrains templates, followed by and  
+overwritten by any custom modifications. This is so changes from  
   upstream can be integrated easily while preserving any tweaks made  
   here.
+
+The remainder of the commands are a list of specific template groups  
+to target.  If none are passed, then they will all be transpiled.
   
 If you want to further tweak these templates, create files corresponding  
 to the group you want to modify in `modifications/`:
@@ -187,14 +204,83 @@ to the group you want to modify in `modifications/`:
 To create your own group of templates pass the `custom=path/to/file.yml`  
  option when running the transpiler.  It can lie anywhere.
 
-`XML` and `YML` data will be generated in modifications/output
+`XML` and `YML` data will be generated in modifications/output.
+
+Also, a markdown table will be created from any modifications or custom  
+group and stored in `modifications/output/markdown`
 
 ## Additional Abbreviations
 
-### Models
+###Models
 
-### Forms
+|abbreviation|template|
+|:--|:--|
+|mbigauto|$VAR1$ = models.BigAutoField($VAR2$)$END$|
+|mbin|$VAR1$ = models.BinaryField($VAR2$)$END$|
+|mdur|$VAR1$ = models.DurationField($VAR2$)$END$|
+|mgip|$VAR1$ = models.GenericIPAddressField(protocol='$VAR2$', unpack_ipv4=$VAR3$)$END$|
+|mip|$VAR1$ = models.GenericIPAddressField(protocol='$VAR2$', unpack_ipv4=$VAR3$)$END$|
+|muuid|$VAR1$ = models.UUIDField($VAR2$)$END$|
 
-### Postgres
+###Forms
 
-### Widgets
+|abbreviation|template|
+|:--|:--|
+|fgip|$VAR1$ = forms.GenericIPAddressField($VAR2$)$END$|
+|fip|$VAR1$ = forms.GenericIPAddressField($VAR2$)$END$|
+|fuuid|$VAR1$ = forms.UUIDField($VAR2$)$END$|
+
+###Postgres
+
+#### Forms
+
+|abbreviation|template|
+|:--|:--|
+|farray|$VAR1$ = SimpleArrayField(base_field=$VAR2$, delimiter=$:','$, max_length=$VAR3$, min_length=$VAR4$)$END$|
+|fdaterange|$VAR1$ = DateRangeField(min_value=$VAR2$, max_value=$VAR3$)$END$|
+|fdatetimerange|$VAR1$ = DateTimeRangeField(min_value=$VAR2$, max_value=$VAR3$)$END$|
+|ffloatrange|$VAR1$ = FloatRangeField(min_value=$VAR2$, max_value=$VAR3$)$END$|
+|fhstore|$VAR1$ = HStoreField($VAR2$)$END$|
+|fintrange|$VAR1$ = IntegerRangeField(min_value=$VAR2$, max_value=$VAR3$)$END$|
+|fjson|$VAR1$ = JSONField($VAR2$)$END$|
+|fsplitarray|$VAR1$ = SplitArrayField(base_field=$VAR2$, size=$VAR3$, remove_trailing_nulls=$VAR4$)$END$|
+
+#### Models
+
+|abbreviation|template|
+|:--|:--|
+|marray|$VAR1$ = fields.ArrayField(base_field=$VAR2$, size=$VAR3$)$END$|
+|mbigintrange|$VAR1$ = fields.BigIntegerRangeField($VAR2$)$END$|
+|mdaterange|$VAR1$ = fields.DateRangeField($VAR2$)$END$|
+|mdatetimerange|$VAR1$ = fields.DateTimeRangeField($VAR2$)$END$|
+|mfloatrange|$VAR1$ = fields.FloatRangeField($VAR2$)$END$|
+|mhstore|$VAR1$ = fields.HStoreField($VAR2$)$END$|
+|mintrange|$VAR1$ = fields.IntegerRangeField($VAR2$)$END$|
+|mjson|$VAR1$ = fields.JSONField($VAR2$)$END$|
+
+###Widgets
+
+|abbreviation|template|
+|:--|:--|
+|wcheck|$VAR1$ = forms.CheckboxInput(check_test=$VAR2$)$END$|
+|wcheckmulti|$VAR1$ = forms.CheckboxSelectMultiple($VAR2$)$END$|
+|wclearablefile|$VAR1$ = forms.ClearableFileInput($VAR2$)$END$|
+|wdate|$VAR1$ = forms.DateInput(format=$VAR2$)$END$|
+|wdatetime|$VAR1$ = forms.DateTimeInput(format=$VAR2$)$END$|
+|wemail|$VAR1$ = forms.EmailInput($VAR2$)$END$|
+|wfile|$VAR1$ = forms.FileInput($VAR2$)$END$|
+|whidden|$VAR1$ = forms.HiddenInput($VAR2$)$END$|
+|wmultihidden|$VAR1$ = forms.MultipleHiddenInput($VAR2$)$END$|
+|wnullbool|$VAR1$ = forms.NullBooleanSelect($VAR2$)$END$|
+|wnum|$VAR1$ = forms.NumberInput($VAR2$)$END$|
+|wpass|$VAR1$ = forms.PasswordInput(render_value=$VAR2$)$END$|
+|wradio|$VAR1$ = forms.RadioSelect($VAR2$)$END$|
+|wselect|$VAR1$ = forms.Select(choices=$VAR2$)$END$|
+|wselectdate|$VAR1$ = forms.SelectDateWidget($VAR2$)$END|
+|wselectmulti|$VAR1$ = forms.SelectMultiple($VAR2$)$END$|
+|wsplitdatetime|$VAR1$ = forms.SplitDateTimeWidget(date_format=$VAR2$, time_format=$VAR3$)$END$|
+|wsplithiddendatetime|$VAR1$ = forms.SplitHiddenDateTimeWidget($VAR2$)$END$|
+|wtext|$VAR1$ = forms.TextInput($VAR2$)$END$|
+|wtextarea|$VAR1$ = forms.Textarea($VAR2$)$END$|
+|wtime|$VAR1$ = forms.TimeInput(format=$VAR2$)$END$|
+|wurl|$VAR1$ = forms.URLInput($VAR2$)$END$|

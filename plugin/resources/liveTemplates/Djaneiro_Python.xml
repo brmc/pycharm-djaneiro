@@ -1,17 +1,33 @@
-<templateSet group="Djaneiro:  Python">
-  <template name="pdb" value="import pdb; pdb.set_trace()" toReformat="false" toShortenFQNames="true">
-    <context />
+<templateSet group="Djaneiro: Python">
+  <template name="__init__" toReformat="true" toShortenFQNames="true" value="&#10;def __init__(self, *args, **kwargs):&#10;    super($VAR1$, self).__init__(*args, **kwargs)&#10;$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot;CLASS_NAME&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
   </template>
-  <template name="ipdb" value="import ipdb; ipdb.set_trace()" toReformat="false" toShortenFQNames="true">
-    <context />
+  <template name="ipdb" toReformat="true" toShortenFQNames="true" value="import ipdb; ipdb.set_trace()$END$">
+    <context>
+      <option name="Python" value="true"/>
+    </context>
   </template>
-  <template name="npdb" value="from nose.tools import set_trace; set_trace()" toReformat="false" toShortenFQNames="true">
-    <context />
+  <template name="npdb" toReformat="true" toShortenFQNames="true" value="from nose.tools import set_trace; set_trace()$END$">
+    <context>
+      <option name="Python" value="true"/>
+    </context>
   </template>
-  <template name="traceback" value="import traceback; traceback.print_exc();" toReformat="false" toShortenFQNames="true">
-    <context />
+  <template name="pdb" toReformat="true" toShortenFQNames="true" value="import pdb; pdb.set_trace()">
+    <context>
+      <option name="Python" value="true"/>
+    </context>
   </template>
-  <template name="utfc" value="# -*- coding: utf-8 -*-" toReformat="false" toShortenFQNames="true">
-    <context />
+  <template name="traceback" toReformat="true" toShortenFQNames="true" value="import traceback; traceback.print_exc();$END$">
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="utfc" toReformat="true" toShortenFQNames="true" value="# -*- coding: utf-8 -*-$END$">
+    <context>
+      <option name="Python" value="true"/>
+    </context>
   </template>
 </templateSet>

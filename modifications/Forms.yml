@@ -1,0 +1,6 @@
+- name: fgip
+  raw: $:FIELDNAME$ = forms.GenericIPAddressField($$)$END$
+- name: fip
+  raw: $:FIELDNAME$ = forms.GenericIPAddressField($$)$END$
+- name: fuuid
+  raw: $:FIELDNAME$ = forms.UUIDField($$)$END$

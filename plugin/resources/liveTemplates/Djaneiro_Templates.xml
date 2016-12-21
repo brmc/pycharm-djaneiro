@@ -1,248 +1,289 @@
 <templateSet group="Djaneiro: Templates">
-  <template name="autoescape" value="{% autoescape %}&#10;    $VAR$&#10;{% autoescape %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="autoescape" toReformat="true" toShortenFQNames="true" value="&#10;{% autoescape $VAR1$ %}&#10;&#9;$VAR2$$SELECTION}&#10;{% endautoescape %}&#10; $END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;off&quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="block" value="{% block %}&#10;    $END$&#10;{% endblock %}" toReformat="false" toShortenFQNames="true">
+  <template name="block" toReformat="true" toShortenFQNames="true" value="&#10;{% block $VAR1$ %}&#10;&#9;$VAR2$$SELECTION}&#10;{% endblock $VAR1$ %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;blockname&quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="comment" value="{% comment %}&#10;    $END$&#10;{% endcomment %}" toReformat="false" toShortenFQNames="true">
+  <template name="blocktrans" toReformat="true" toShortenFQNames="true" value="&#10;{% blocktrans %}&#10;    $VAR1$$SELECTION}&#10;{% endblocktrans %}&#10; $END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="ifequal" value="{% ifequal $VAR$ $VAR$ %} &#10;    $END$&#10;{% endifequal %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="comment" toReformat="true" toShortenFQNames="true" value="&#10;{% comment %}&#10;&#9;$VAR1$$SELECTION}&#10;{% endcomment %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="csrf" value="{% csrf_token %}" toReformat="false" toShortenFQNames="true">
+  <template name="csrf" toReformat="true" toShortenFQNames="true" value="{% csrf_token %}$END">
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="cycle" value="{% cycle &quot;$VAR$&quot; %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="cycle" toReformat="true" toShortenFQNames="true" value="{% cycle $VAR1$%}$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="debug" value="{% debug %}" toReformat="false" toShortenFQNames="true">
+  <template name="debug" toReformat="true" toShortenFQNames="true" value="{% debug %}$END$">
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="ext" value="{% extends &quot;$VAR$&quot; %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="elif" toReformat="true" toShortenFQNames="true" value="{% elif %}$END$">
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="extends" value="{% extends &quot;$VAR$&quot; %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="else" toReformat="true" toShortenFQNames="true" value="{% else %}$END$">
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="filter" value="{% filter $VAR$ %}&#10;    $END$&#10;{% endfilter %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ext" toReformat="true" toShortenFQNames="true" value="{% extends &quot;$VAR1$$SELECTION}&quot; %}$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="firstof" value="{% firstof $VAR$ %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="extends" toReformat="true" toShortenFQNames="true" value="{% extends &quot;$VAR1$$SELECTION}&quot; %}$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="for" value="{% for $VAR$ in $ITER$ %}&#10;    $END$&#10;{% endfor %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ITER" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="extrahead" toReformat="true" toShortenFQNames="true" value="&#10;{% block extrahead %}&#10;    $VAR1$$SELECTION}&#10;{% endblock extrahead %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="fore" value="{% for $VAR$ in $ITER$ %}&#10;    $START$&#10;{% empty %}&#10;    $END$&#10;{% endfor %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ITER" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="extrastyle" toReformat="true" toShortenFQNames="true" value="&#10;{% block extrastyle %}&#10;    $VAR1$$SELECTION}&#10;{% endblock extrastyle %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="if" value="{% if $VAR$ %}&#10;    $END$&#10;{% endif %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="filter" toReformat="true" toShortenFQNames="true" value="&#10;{% filter $VAR1$%}&#10;&#9;$VAR2$$SELECTION}&#10;{% endfilter %}&#10; $END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="ifchanged" value="{% ifchanged %}&#10;    $END$&#10;{% endifchanged %}" toReformat="false" toShortenFQNames="true">
+  <template name="firstof" toReformat="true" toShortenFQNames="true" value="{% firstof $VAR1$%}$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="ife" value="{% if $VAR$ %}&#10;    $END$&#10;{% else %}&#10;    &#10;{% endif %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="for" toReformat="true" toShortenFQNames="true" value="&#10;{% for $VAR1$$VAR2$%}&#10;&#9;$VAR3$$SELECTION}&#10;{% endfor %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR3"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; in &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="ifelse" value="{% if $VAR$ %}&#10;    $END$&#10;{% else %}&#10;    &#10;{% endif %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="fore" toReformat="true" toShortenFQNames="true" value="&#10;{% for $VAR1$$VAR2$%}&#10;&#9;$VAR3${% empty %}&#10;&#9;$VAR4${% endfor %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot;&#10;&quot;" expression="" name="VAR3"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&#10;&quot;" expression="" name="VAR4"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; in &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="ifeq" value="{% ifequal $VAR$ $VAR2$ %}&#10;    $END$&#10;{% endifequal %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="iblock" toReformat="true" toShortenFQNames="true" value="{% block $VAR1$ %}$VAR2$$SELECTION}{% endblock $VAR1$ %}$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;blockname&quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="ifnotequal" value="{% ifnotequal $VAR$ $VAR2$ %}&#10;    $END$&#10;{% endifequal %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="if" toReformat="true" toShortenFQNames="true" value="&#10;{% if $VAR1$%}&#10;&#9;$VAR2$$SELECTION}&#10;{% endif %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="inc" value="{% include &quot;$VAR$&quot; %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ifchanged" toReformat="true" toShortenFQNames="true" value="&#10;{% ifchanged $VAR1$%}&#10;&#9;$VAR2$$SELECTION}&#10;{% endifchanged %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="include" value="{% include &quot;$VAR$&quot; %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ife" toReformat="true" toShortenFQNames="true" value="&#10;{% if $VAR1$%}&#10;&#9;$VAR2${% else %}&#10;&#9;$VAR3${% endif %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot;&#10;&quot;" expression="" name="VAR3"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&#10;&quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="load" value="{% load $VAR$ %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ifelse" toReformat="true" toShortenFQNames="true" value="&#10;{% if $VAR1$%}&#10;&#9;$VAR2${% else %}&#10;&#9;$VAR3${% endif %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot;&#10;&quot;" expression="" name="VAR3"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&#10;&quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="now" value="{% now &quot;$VAR$&quot; %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ifeq" toReformat="true" toShortenFQNames="true" value="&#10;{% ifequal $VAR1$$VAR2$%}&#10;&#9;$VAR3$$SELECTION}&#10;{% endifequal %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR3"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="regroup" value="{% regroup $VAR$ by $VAR2$ as $VAR3$ %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ifequal" toReformat="true" toShortenFQNames="true" value="&#10;{% ifequal $VAR1$$VAR2$%} &#10;&#9;$VAR3$$SELECTION}&#10;{% endifequal %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR3"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="spaceless" value="{% spaceless %}&#10;    $VAR$&#10;{% endspaceless %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ifnotequal" toReformat="true" toShortenFQNames="true" value="&#10;{% ifnotequal $VAR1$$VAR2$%}&#10;&#9;$VAR3$$SELECTION}&#10;{% endifnotequal %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR3"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="ssi" value="{% ssi %}" toReformat="false" toShortenFQNames="true">
+  <template name="inc" toReformat="true" toShortenFQNames="true" value="{% include $VAR1$&quot;$VAR2$&quot;} %}$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="static" value="{% static $VAR$ %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="include" toReformat="true" toShortenFQNames="true" value="{% include $VAR1$&quot;$VAR2$&quot;} %}$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="templatetag" value="{% templatetag $VAR$ %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="load" toReformat="true" toShortenFQNames="true" value="{% load $VAR1$%}$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="widthratio" value="{% widthratio $VAR$ $VAR2$ $VAR3$ %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="media" toReformat="true" toShortenFQNames="true" value="{{ MEDIA_URL }} $END$">
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="url" value="{% url %}" toReformat="false" toShortenFQNames="true">
+  <template name="now" toReformat="true" toShortenFQNames="true" value="{% now &quot;$VAR1$&quot; %}$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="widthratioas" value="{% widthratio $VAR$ $VAR2$ $VAR3$ as $VAR4$ %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR4" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="regroup" toReformat="true" toShortenFQNames="true" value="{% regroup $VAR1$$VAR2$$VAR3$%}$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR3"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; as &quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; by &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="with" value="{% with $VAR$ as $VAR2$ %}&#10;    $END$&#10;{% endwith %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="spaceless" toReformat="true" toShortenFQNames="true" value="&#10;{% spaceless %}&#10;&#9;$VAR1$$SELECTION}&#10;{% endspaceless %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="trans" value="{% trans $VAR$ %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ssi" toReformat="true" toShortenFQNames="true" value="{% ssi $VAR1$$VAR2$ %}$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot;parsed&quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="blocktrans" value="{% blocktrans with $VAR$ as $VAR2$ %}&#10;    $END$&#10;{% endblocktrans %}" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="static" toReformat="true" toShortenFQNames="true" value="{% static &quot;$VAR1$$SELECTION}&quot; %}$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="super" value="{{ block.super }}" toReformat="false" toShortenFQNames="true">
+  <template name="staticu" toReformat="true" toShortenFQNames="true" value="{{ STATIC_URL }} $END$">
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="extrahead" value="{% block extrahead %}&#10;    $END$&#10;{% endblock extrahead %}" toReformat="false" toShortenFQNames="true">
+  <template name="super" toReformat="true" toShortenFQNames="true" value="{{ block.super }}$END$">
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="extrastyle" value="{% block extrastyle %}&#10;    $END$&#10;{% endblock extrastyle %}" toReformat="false" toShortenFQNames="true">
+  <template name="tag" toReformat="true" toShortenFQNames="true" value="{% $VAR1$%}$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="var" value="{{ $END% }}" toReformat="false" toShortenFQNames="true">
+  <template name="templatetag" toReformat="true" toShortenFQNames="true" value="{% templatetag $VAR1$%}$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="tag" value="{% $END$ %}" toReformat="false" toShortenFQNames="true">
+  <template name="trans" toReformat="true" toShortenFQNames="true" value="{% trans &quot;$VAR1$$SELECTION}&quot; %}$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="staticu" value="{{ STATIC_URL }}" toReformat="false" toShortenFQNames="true">
+  <template name="url" toReformat="true" toShortenFQNames="true" value="{% url $VAR1$%}$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
     </context>
   </template>
-  <template name="media" value="{{ $END$ }}" toReformat="false" toShortenFQNames="true">
+  <template name="var" toReformat="true" toShortenFQNames="true" value="{{ $VAR1$$SELECTION} }}$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR1"/>
     <context>
-      <option name="Django" value="true" />
+      <option name="Django" value="true"/>
+    </context>
+  </template>
+  <template name="verbatim" toReformat="true" toShortenFQNames="true" value="&#10;{% verbatim %}&#10;&#9;$VAR1$$SELECTION}&#10;{% endverbatim %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR1"/>
+    <context>
+      <option name="Django" value="true"/>
+    </context>
+  </template>
+  <template name="widthratio" toReformat="true" toShortenFQNames="true" value="{% widthratio $VAR1$ $VAR2$ $VAR3$ %}$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot;100&quot;" expression="" name="VAR3"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;max_value&quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;this_value&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Django" value="true"/>
+    </context>
+  </template>
+  <template name="with" toReformat="true" toShortenFQNames="true" value="&#10;{% with $VAR1$$VAR2$%}&#10;    $VAR3$$SELECTION}&#10;{% endwith %}&#10;&#9;$END$">
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR3"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; &quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot; as &quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Django" value="true"/>
     </context>
   </template>
 </templateSet>

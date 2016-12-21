@@ -62,7 +62,7 @@ class VariableDefinition(object):
 class TemplateDefinition(object):
     variable_prefix = 'VAR{}'
     VARIABLE_WRAPPER = '${}$'
-    VARIABLE_REGEX = r'(?P<raw>\$(?P<variable>[\w_]*)?:?(?P<default>[\w_]*)?\$)'
+    VARIABLE_REGEX = r'(?P<raw>\$(?P<variable>[\w_]*)?:?(?P<default>.*)?\$)'
     SUBLIME_CONTENT_REGEX = r'\<\!\[CDATA\[(.*)\]\]'
     SUBLIME_VARIABLE_REGEX = r'(?P<raw>\$\{?(?P<variable>\d):?(?P<default>[\w_\s]*)\}?)'
 
@@ -257,6 +257,9 @@ def parse_and_extract_variables(string: str, regex: str, variables=None):
 
     for i, match in enumerate(matches):
         raw_match, variable_name, default_value = match
+
+        if raw_match == '$END$':
+            continue
 
         max_replace = 1 if variable_name == '' else -1
 

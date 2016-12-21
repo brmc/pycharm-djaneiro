@@ -1,0 +1,225 @@
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: farray
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = SimpleArrayField(base_field=$$, max_length=$:None$,
+      min_length=$:None$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: fdaterange
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = DateRangeField(min_value=$:None$, max_value=$:None$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: fdatetimerange
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = DateTimeRangeField(min_value=$:None$, max_value=$:None$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ffloatrange
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = FloatRangeField(min_value=$:None$, max_value=$:None$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: fhstore
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = HStoreField($$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: fintrange
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = IntegerRangeField(min_value=$:None$, max_value=$:None$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: fjson
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = JSONField($$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: fsplitarray
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = SplitArrayField(base_field=$$, size=$$, remove_trailing_nulls=$:False$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: marray
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = fields.ArrayField(base_field=$$, size=$:None$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mbigintrange
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = fields.BigIntegerRangeField($$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mdaterange
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = fields.DateRangeField($$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mdatetimerange
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = fields.DateTimeRangeField($$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mfloatrange
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = fields.FloatRangeField($$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mhstore
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = fields.HStoreField($$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mintrange
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = fields.IntegerRangeField($$)$END
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mjson
+  raw: $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME$ = fields.JSONField($$)$END
+    expression: ''
+    name: VAR1

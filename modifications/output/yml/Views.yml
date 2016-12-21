@@ -3,27 +3,15 @@
     value: true
   description: ''
   name: adminview
-  raw: "class $VAR$Admin(admin.ModelAdmin):\n        '''\n            Admin View for\
-    \ $VAR$\n        '''\n        list_display = ('$VAR2$',)\n        list_filter\
-    \ = ('$VAR3$',)\n        inlines = [\n            $VAR$Inline,\n        ]\n  \
-    \      raw_id_fields = ('$VAR4$',)\n        readonly_fields = ('$VAR5$',)\n  \
-    \      search_fields = ['$VAR6$']\n\nadmin.register($VAR$, $VAR$Admin) "
+  raw: "\nclass $VAR1$Admin(admin.ModelAdmin):\n    '''\n        Admin View for $VAR1$\n\
+    \    '''\n    list_display = ('$VAR2$',)\n    list_filter = ('$VAR3$',)\n    inlines\
+    \ = [\n        $VAR4$Inline,\n    ]\n    raw_id_fields = ('$VAR5$',)\n    readonly_fields\
+    \ = ('$VAR6$',)\n    search_fields = ('$VAR7$',)\n\nadmin.site.register($VAR1$,\
+    \ $VAR1$Admin)\n$END$"
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
   variables:
-  - alwaysStopAt: 'true'
-    defaultValue: ''
-    expression: ''
-    name: VAR4
-  - alwaysStopAt: 'true'
-    defaultValue: MODEL_NAME
-    expression: ''
-    name: VAR
-  - alwaysStopAt: 'true'
-    defaultValue: ''
-    expression: ''
-    name: VAR3
   - alwaysStopAt: 'true'
     defaultValue: ''
     expression: ''
@@ -35,19 +23,35 @@
   - alwaysStopAt: 'true'
     defaultValue: ''
     expression: ''
+    name: VAR3
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR4
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
     name: VAR6
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR7
 - context:
   - name: Python
     value: true
-  description: null
+  description: ''
   name: context
   raw: "\ndef get_context_data(self, **kwargs):\n    context = super($VAR1$, self).get_context_data(**kwargs)\n\
-    \    return context\n"
+    \    return context\n$END$"
   shortcut: TAB
   toReformat: true
   toShortenFQNames: true
   variables:
-  - alwaysStopAt: true
+  - alwaysStopAt: 'true'
     defaultValue: CLASS_NAME
     expression: ''
     name: VAR1
@@ -56,177 +60,214 @@
     value: true
   description: ''
   name: createview
-  raw: "class $VAR$CreateView(CreateView):\n    model = $VAR$\n    template_name =\
-    \ \"$VAR2$\"   "
+  raw: "\nclass $VAR1$CreateView(CreateView):\n    model = $VAR1$\n    template_name\
+    \ = \"$VAR2$\"\n$END$"
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
   variables:
-  - alwaysStopAt: 'true'
-    defaultValue: MODEL_NAME
-    expression: ''
-    name: VAR
   - alwaysStopAt: 'true'
     defaultValue: TEMPLATE_NAME
     expression: ''
     name: VAR2
+  - alwaysStopAt: 'true'
+    defaultValue: MODEL_NAME
+    expression: ''
+    name: VAR1
 - context:
   - name: Python
     value: true
   description: ''
   name: deleteview
-  raw: "class $VAR$DeleteView(DeleteView):\n    model = $VAR$\n    template_name =\
-    \ \"$VAR2$\""
+  raw: "\nclass $VAR1$DeleteView(DeleteView):\n    model = $VAR1$\n    template_name\
+    \ = \"$VAR2$\"\n$END$"
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
   variables:
-  - alwaysStopAt: 'true'
-    defaultValue: MODEL_NAME
-    expression: ''
-    name: VAR
   - alwaysStopAt: 'true'
     defaultValue: TEMPLATE_NAME
     expression: ''
     name: VAR2
+  - alwaysStopAt: 'true'
+    defaultValue: MODEL_NAME
+    expression: ''
+    name: VAR1
 - context:
   - name: Python
     value: true
   description: ''
   name: detailview
-  raw: "class $VAR$DetailView(DetailView):\n    model = $VAR$\n    template_name =\
-    \ \"$VAR2$\""
+  raw: "\nclass $VAR1$DetailView(DetailView):\n    model = $VAR1$\n    template_name\
+    \ = \"$VAR2$\"\n$END$"
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
   variables:
-  - alwaysStopAt: 'true'
-    defaultValue: MODEL_NAME
-    expression: ''
-    name: VAR
   - alwaysStopAt: 'true'
     defaultValue: TEMPLATE_NAME
     expression: ''
     name: VAR2
+  - alwaysStopAt: 'true'
+    defaultValue: MODEL_NAME
+    expression: ''
+    name: VAR1
 - context:
   - name: Python
     value: true
   description: ''
   name: dispatch
-  raw: "def dispatch(self, request, *args, **kwargs):\n    return super(CLASS_NAME,\
-    \ self).dispatch(request, *args, **kwargs)$END$"
+  raw: "\ndef dispatch(self, request, *args, **kwargs):\n    return super($VAR1$,\
+    \ self).dispatch(request, *args, **kwargs)\n$END$"
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
-  variables: []
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: CLASS_NAME
+    expression: ''
+    name: VAR1
 - context:
   - name: Python
     value: true
   description: ''
   name: listview
-  raw: "class $VAR$ListView(ListView):\n    model = $VAR$\n    template_name = \"\
-    $VAR2$\""
+  raw: "\nclass $VAR1$ListView(ListView):\n    model = $VAR1$\n    template_name =\
+    \ \"$VAR2$\"\n$END$"
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
   variables:
-  - alwaysStopAt: 'true'
-    defaultValue: MODEL_NAME
-    expression: ''
-    name: VAR
   - alwaysStopAt: 'true'
     defaultValue: TEMPLATE_NAME
     expression: ''
     name: VAR2
+  - alwaysStopAt: 'true'
+    defaultValue: MODEL_NAME
+    expression: ''
+    name: VAR1
 - context:
   - name: Python
     value: true
   description: ''
   name: stackedinline
-  raw: "class $VAR$Inline(adminStackedInline):\n        '''\n            Stacked Inline\
-    \ View for $VAR$\n        '''\n      model = $VAR$\n      min_num = 3\n      max_num\
-    \ = 20\n      extra = 1\n      raw_id_fields = ($VAR2$,)"
+  raw: "\nclass $VAR1$Inline(admin.StackedInline):\n        '''\n            Stacked\
+    \ Inline View for $VAR1$\n        '''\n      model = $VAR2$$VAR1$}\n      min_num\
+    \ = $VAR3$\n      max_num = $VAR4$\n      extra = $VAR5$\n      raw_id_fields\
+    \ = ($VAR6$,)\n\n$END$"
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
   variables:
-  - alwaysStopAt: 'true'
-    defaultValue: MODEL_NAME
-    expression: ''
-    name: VAR
   - alwaysStopAt: 'true'
     defaultValue: ''
     expression: ''
     name: VAR2
+  - alwaysStopAt: 'true'
+    defaultValue: '1'
+    expression: ''
+    name: VAR5
+  - alwaysStopAt: 'true'
+    defaultValue: '3'
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: 'true'
+    defaultValue: '20'
+    expression: ''
+    name: VAR4
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR6
 - context:
   - name: Python
     value: true
   description: ''
   name: tabularinline
-  raw: "class $VAR$Inline(admin.TabularInline):\n        '''\n            Tabular\
-    \ Inline View for $VAR$\n        '''\n      model = $VAR$\n      min_num = 3\n\
-    \      max_num = 20\n      extra = 1\n      raw_id_fields = ($VAR2$,)"
+  raw: "\nclass $VAR1$Inline(admin.TabularInline):\n        '''\n            Tabular\
+    \ Inline View for $VAR1$\n        '''\n      model = $VAR2$$VAR1$}\n      min_num\
+    \ = $VAR3$\n      max_num = $VAR4$\n      extra = $VAR5$\n      raw_id_fields\
+    \ = ($VAR6$,)\n\n$END$"
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
   variables:
-  - alwaysStopAt: 'true'
-    defaultValue: MODEL_NAME
-    expression: ''
-    name: VAR
   - alwaysStopAt: 'true'
     defaultValue: ''
     expression: ''
     name: VAR2
+  - alwaysStopAt: 'true'
+    defaultValue: '1'
+    expression: ''
+    name: VAR5
+  - alwaysStopAt: 'true'
+    defaultValue: '3'
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: 'true'
+    defaultValue: '20'
+    expression: ''
+    name: VAR4
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR6
 - context:
   - name: Python
     value: true
   description: ''
   name: templateview
-  raw: "class $VAR$TemplateView(DetailView):\n    model = $VAR$\n    template_name\
-    \ = \"$VAR2$\""
-  shortcut: TAB
-  toReformat: false
-  toShortenFQNames: true
-  variables:
-  - alwaysStopAt: 'true'
-    defaultValue: TEMPLATE_NAME
-    expression: ''
-    name: VAR
-  - alwaysStopAt: 'true'
-    defaultValue: ''
-    expression: ''
-    name: VAR2
-- context:
-  - name: Python
-    value: true
-  description: null
-  name: updateview
-  raw: "\nclass $VAR1$UpdateView(UpdateView):\n    model = $VAR1$\n    template_name\
-    \ = \"$VAR2$\"\n"
+  raw: "\nclass $VAR1$(TemplateView):\n    template_name = \"$VAR2$\"\n$END$"
   shortcut: TAB
   toReformat: true
   toShortenFQNames: true
   variables:
-  - alwaysStopAt: true
-    defaultValue: MODEL_NAME
-    expression: ''
-    name: VAR1
-  - alwaysStopAt: true
+  - alwaysStopAt: 'true'
     defaultValue: TEMPLATE_NAME
     expression: ''
     name: VAR2
+  - alwaysStopAt: 'true'
+    defaultValue: CLASS_NAME
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: updateview
+  raw: "\nclass $VAR1$UpdateView(UpdateView):\n    model = $VAR1$\n    template_name\
+    \ = \"$VAR2$\"\n$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: TEMPLATE_NAME
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: 'true'
+    defaultValue: MODEL_NAME
+    expression: ''
+    name: VAR1
 - context:
   - name: Python
     value: true
   description: ''
   name: view
-  raw: 'def $VAR$(request):'
+  raw: def $VAR1$(request):$END$
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
   variables:
   - alwaysStopAt: 'true'
     defaultValue: VIEWNAME
     expression: ''
-    name: VAR
+    name: VAR1
