@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3.5
 # -*- coding: utf-8 -*-
 import re
 import warnings
+from collections import OrderedDict
 from functools import wraps
 from xml import etree
 
@@ -53,8 +54,7 @@ class VariableDefinition(object):
         return {
             'name': self.name,
             'expression': self.expression,
-            'defaultValue': '"{}"'.format(self.defaultValue)
-            if self.defaultValue else '',
+            'defaultValue': '"{}"'.format(self.defaultValue) if self.defaultValue else '',
             'alwaysStopAt': str(self.alwaysStopAt).lower()
         }
 
@@ -248,29 +248,30 @@ class TemplateDefinition(object):
 
 def parse_and_extract_variables(string: str, regex: str, variables=None):
     pattern = re.compile(regex)
+    string = string.replace("$:$", "$$")
+    format_variable = TemplateDefinition.variable_prefix.format
+    wrap_variable = TemplateDefinition.VARIABLE_WRAPPER.format
+
     matches = pattern.findall(string)
-    variables = variables or {}
+    variables = variables or OrderedDict()
 
     for i, match in enumerate(matches):
         raw_match, variable_name, default_value = match
-        if raw_match in ["$$", "$:$"]:
-            continue
 
-        if not variable_name:
-            variable_name = TemplateDefinition.variable_prefix.format(i)
+        max_replace = 1 if variable_name == '' else -1
+
+        if variable_name == '':
+            variable_name = format_variable(i + 1)
         elif variable_name.isdigit():
             var = int(variable_name)
-            variable_name = TemplateDefinition.variable_prefix.format(var)
+            variable_name = format_variable(var)
 
         variable_dict = VariableDefinition(
             name=variable_name,
             defaultValue=default_value)
 
         variables[variable_name] = variable_dict
-        variable_name = TemplateDefinition.VARIABLE_WRAPPER.format(
-            variable_name)
-        string = string.replace(raw_match, variable_name)
-
-    string = string.replace("$:$", "$$")
+        variable_name = wrap_variable(variable_name)
+        string = string.replace(raw_match, variable_name, max_replace)
 
     return string, variables

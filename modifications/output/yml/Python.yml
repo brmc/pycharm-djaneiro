@@ -1,0 +1,65 @@
+- context:
+  - name: Python
+    value: true
+  description: null
+  name: __init__
+  raw: "\ndef __init__(self, *args, **kwargs):\n    super($VAR1$, self).__init__(*args,\
+    \ **kwargs)\n"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: CLASS_NAME
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ipdb
+  raw: import ipdb; ipdb.set_trace()
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: npdb
+  raw: from nose.tools import set_trace; set_trace()
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: pdb
+  raw: import pdb; pdb.set_trace()
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: traceback
+  raw: import traceback; traceback.print_exc();
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: utfc
+  raw: '# -*- coding: utf-8 -*-'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
