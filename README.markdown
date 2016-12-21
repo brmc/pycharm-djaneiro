@@ -23,11 +23,11 @@ basic python objects, and other commonly typed patterns.
 * [Usage](#usage)
   * [Plugin](#plugin)
   * [Transpiler](#transpiler)
-* [Additional abbreviations](additional-abbreviations)
+* [Additional abbreviations](#additional-abbreviations)
   * [Models](#models)
   * [Forms](#forms)
   * [Postgres](#postgres)
-  * [Widgets](#widgts)
+  * [Widgets](#widgets)
 
 
 ## Requirements ##
