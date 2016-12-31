@@ -1,0 +1,582 @@
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: fk
+  raw: $VAR$ = models.ForeignKey($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: m2m
+  raw: $VAR$ = models.ManyToManyField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mauto
+  raw: $VAR$ = models.AutoField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mbigint
+  raw: $VAR$ = models.BigIntegerField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mbool
+  raw: $VAR$ = models.BooleanField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mchar
+  raw: $VAR$ = models.CharField($VAR2$, max_length=50)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mcoseint
+  raw: $VAR$ = models.CommaSeparatedIntegerField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mdate
+  raw: $VAR$ = models.DateField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mdatetime
+  raw: $VAR$ = models.DateTimeField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mdecimal
+  raw: $VAR$ = models.DecimalField($VAR2$, max_digits=5, decimal_places=2)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: DurationField (mduration)
+  name: mduration
+  raw: $VAR1$ = models.DurationField($VAR2$)
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: memail
+  raw: $VAR$ = models.EmailField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mfile
+  raw: $VAR$ = models.FileField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mfilepath
+  raw: $VAR$ = models.FilePathField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mfloat
+  raw: $VAR$ = models.FloatField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mimg
+  raw: $VAR$ = models.ImageField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mint
+  raw: $VAR$ = models.IntegerField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mip
+  raw: $VAR$ = models.IPAddressField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mnullbool
+  raw: $VAR$ = models.NullBooleanField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: Model
+  name: Model
+  raw: "\nclass $VAR1$(models.Model):\n\n    class Meta:\n        verbose_name = \"\
+    $VAR1$\"\n        verbose_name_plural = \"$VAR1$s\"\n\n    def __str__(self):\n\
+    \        pass\n    "
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: s
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: Model (full)
+  name: Model_full
+  raw: "\nclass $VAR1$(models.Model):\n    $VAR2$# TODO: Define fields here}\n\n \
+    \   class Meta:\n        verbose_name = \"$VAR1$\"\n        verbose_name_plural\
+    \ = \"$VAR1$s\"\n\n    def __str__(self):\n        pass\n\n    def save(self):\n\
+    \        pass\n\n    @models.permalink\n    def get_absolute_url(self):\n    \
+    \    return ('')\n\n    $VAR3$# TODO: Define custom methods here}\n\n    "
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: s
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR3
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mphone
+  raw: $VAR$ = models.PhoneNumberField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mposint
+  raw: $VAR$ = models.PositiveIntegerField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mpossmallint
+  raw: $VAR$ = models.PositiveSmallIntegerField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mslug
+  raw: $VAR$ = models.SlugField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: msmallint
+  raw: $VAR$ = models.SmallIntegerField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mtext
+  raw: $VAR$ = models.TextField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mtime
+  raw: $VAR$ = models.TimeField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: murl
+  raw: $VAR$ = models.URLField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: musstate
+  raw: $VAR$ = models.USStateField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mxml
+  raw: $VAR$ = models.XMLField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: o2o
+  raw: $VAR$ = models.OneToOneField($VAR2$)
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2

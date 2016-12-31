@@ -1,0 +1,14 @@
+
+CACHES = {
+    '$:default$': {
+        'BACKEND': 'django.core.cache.backends.$:locmem.LocMemCache$',
+        'KEY_FUNCTION': $:None$,
+        'KEY_PREFIX': '$$',
+        'LOCATION': '$$',
+        'OPTIONS': $:None$,
+        'TIMEOUT': $:300$,
+        'VERSION': $:1$
+    },
+    $$
+}
+$END$

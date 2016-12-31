@@ -1,0 +1,23 @@
+- name: raw
+  raw: $var$ = models.AutoField($var$)$end$
+
+- name: template
+  template: ./shortbus/tests/data/template.txt
+
+- name: bah
+  raw: $weep$ $graa:nah$ $weep:$ $:ni$ $ni$ $$
+  shortcut: bong
+  context:
+    - name: bong
+    - value: False
+  variables:
+    - name: weep
+      defaultValue: suckit
+    - name: graa
+      defaultValue: hard
+      expression: i have no idea what this is for
+      alwaysStopAt: False
+
+
+  toReformat: False
+  toShortenFQNames: False

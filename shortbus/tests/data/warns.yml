@@ -1,0 +1,5 @@
+- name: raw
+  raw: $var$ = models.AutoField($var$)$end$
+  variables:
+    - name: vr
+    - defaultValue: 1

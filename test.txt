@@ -1,2 +1,0 @@
-$moo$ = boo$too$
-$joo$ = $croo$

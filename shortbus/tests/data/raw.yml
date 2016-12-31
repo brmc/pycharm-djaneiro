@@ -1,0 +1,16 @@
+- name: bah
+  raw: $weep$ $graa:nah$ $weep:$ $:ni$ $ni$ $$
+  shortcut: bong
+  context:
+    - name: bong
+    - value: False
+  vars:
+    - name: weep
+      default: suckit
+    - name: grah
+      default: hard
+      expression: i have no idea what this is for
+      always_stop_at: False
+
+  to_format: False
+  toShortenFQNames: False

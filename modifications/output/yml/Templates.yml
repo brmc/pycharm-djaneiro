@@ -1,0 +1,627 @@
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: autoescape
+  raw: "{% autoescape %}\n    $VAR$\n{% autoescape %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: block
+  raw: "{% block %}\n    $END$\n{% endblock %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: blocktrans
+  raw: "{% blocktrans with $VAR$ as $VAR2$ %}\n    $END$\n{% endblocktrans %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: comment
+  raw: "{% comment %}\n    $END$\n{% endcomment %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: csrf
+  raw: '{% csrf_token %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: cycle
+  raw: '{% cycle "$VAR$" %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: debug
+  raw: '{% debug %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: elif
+  name: elif
+  raw: '{% elif %}'
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: else
+  name: else
+  raw: '{% else %}'
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: ext
+  raw: '{% extends "$VAR$" %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: extends
+  raw: '{% extends "$VAR$" %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: extrahead
+  raw: "{% block extrahead %}\n    $END$\n{% endblock extrahead %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: extrastyle
+  raw: "{% block extrastyle %}\n    $END$\n{% endblock extrastyle %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: filter
+  raw: "{% filter $VAR$ %}\n    $END$\n{% endfilter %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: firstof
+  raw: '{% firstof $VAR$ %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: for
+  raw: "{% for $VAR$ in $ITER$ %}\n    $END$\n{% endfor %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: ITER
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: fore
+  raw: "{% for $VAR$ in $ITER$ %}\n    $START$\n{% empty %}\n    $END$\n{% endfor\
+    \ %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: START
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: ITER
+- context:
+  - name: Django
+    value: true
+  description: inline block
+  name: iblock
+  raw: '{% block $VAR1$ %}$VAR2$$SELECTION}{% endblock $VAR1$ %}'
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: blockname
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: if
+  raw: "{% if $VAR$ %}\n    $END$\n{% endif %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: ifchanged
+  raw: "{% ifchanged %}\n    $END$\n{% endifchanged %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: ife
+  raw: "{% if $VAR$ %}\n    $END$\n{% else %}\n    \n{% endif %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: ifelse
+  raw: "{% if $VAR$ %}\n    $END$\n{% else %}\n    \n{% endif %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: ifeq
+  raw: "{% ifequal $VAR$ $VAR2$ %}\n    $END$\n{% endifequal %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: ifequal
+  raw: "{% ifequal $VAR$ $VAR$ %} \n    $END$\n{% endifequal %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: ifnotequal
+  raw: "{% ifnotequal $VAR$ $VAR2$ %}\n    $END$\n{% endifequal %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: inc
+  raw: '{% include "$VAR$" %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: include
+  raw: '{% include "$VAR$" %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: load
+  raw: '{% load $VAR$ %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: media
+  raw: '{{ $END$ }}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: now
+  raw: '{% now "$VAR$" %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: regroup
+  raw: '{% regroup $VAR$ by $VAR2$ as $VAR3$ %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR3
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: spaceless
+  raw: "{% spaceless %}\n    $VAR$\n{% endspaceless %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: ssi
+  raw: '{% ssi %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: static
+  raw: '{% static $VAR$ %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: staticu
+  raw: '{{ STATIC_URL }}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: super
+  raw: '{{ block.super }}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: tag
+  raw: '{% $END$ %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: templatetag
+  raw: '{% templatetag $VAR$ %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: trans
+  raw: '{% trans $VAR$ %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: url
+  raw: '{% url %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: var
+  raw: '{{ $END% }}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables: []
+- context:
+  - name: Django
+    value: true
+  description: verbatim
+  name: verbatim
+  raw: "\n{% verbatim %}\n\t$VAR1$$SELECTION}\n{% endverbatim %}\n\t"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: widthratio
+  raw: '{% widthratio $VAR$ $VAR2$ $VAR3$ %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR3
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: with
+  raw: "{% with $VAR$ as $VAR2$ %}\n    $END$\n{% endwith %}"
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+- context:
+  - name: Django
+    value: true
+  description: ''
+  name: widthratioas
+  raw: '{% widthratio $VAR$ $VAR2$ $VAR3$ as $VAR4$ %}'
+  shortcut: TAB
+  toReformat: false
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR4
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: 'true'
+    defaultValue: ''
+    expression: ''
+    name: VAR3

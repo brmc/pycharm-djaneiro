@@ -1,0 +1,205 @@
+<templateSet group="Djaneiro: Forms">
+  <template name="fbool" toReformat="true" toShortenFQNames="true" value="$VAR1$ = forms.BooleanField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR1"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fchar" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.CharField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fchoice" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.ChoiceField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fcombo" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.ComboField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fdate" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.DateField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fdatetime" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.DateTimeField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fdecimal" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.DecimalField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fduration" toReformat="true" toShortenFQNames="true" value="$VAR1$ = forms.DurationField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR1"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="femail" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.EmailField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="ffile" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.FileField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="ffilepath" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.FilePathField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="ffloat" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.FloatField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fimg" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.ImageField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fint" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.IntegerField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fip" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.IPAddressField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fmochoice" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.ModelChoiceField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fmomuchoice" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.ModelMultipleChoiceField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fmuchoice" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.MultipleChoiceField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fmuval" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.MultiValueField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fnullbool" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.NullBooleanField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="Form" toReformat="true" toShortenFQNames="true" value="&#10;class $VAR1$(forms.Form):&#10;    $VAR2$# TODO: Define form fields here}&#10;    ">
+    <variable alwaysStopAt="true" defaultValue="&quot;FORMNAME&quot;" expression="" name="VAR1"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fregex" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.RegexField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fsdatetime" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.SplitDateTimeField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="fslug" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.SlugField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="ftchoice" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.TypedChoiceField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="ftime" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.TimeField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="ftmuchoice" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.TypedMultipleChoiceField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="furl" toReformat="false" toShortenFQNames="true" value="$VAR$ = forms.URLField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="ModelForm" toReformat="true" toShortenFQNames="true" value="&#10;class $VAR1$Form(forms.ModelForm):&#10;    class Meta:&#10;        model = $VAR1$= ('$VAR2$',)&#10;    ">
+    <variable alwaysStopAt="true" defaultValue="&quot;&#10;        fields &quot;" expression="" name="VAR1"/>
+    <variable alwaysStopAt="true" defaultValue="" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+</templateSet>
