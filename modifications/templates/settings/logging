@@ -1,0 +1,17 @@
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        $:# hint: slogformatter, slogformatterserver,$
+    },
+    'filters': {
+        $:# slogfilter, slogfilterdebugtrue, slogfilterdebugfalse, slogfiltercallback$
+    },
+    'handlers': {
+        $:# sloghandler, sloghandlerstream, sloghandleremail$
+    },
+    'loggers': {
+        $:# slogger$
+    }
+}
+$END$

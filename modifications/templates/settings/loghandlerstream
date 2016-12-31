@@ -1,0 +1,5 @@
+'$:console$': {
+    'level': '$:INFO$',
+    'filters': ['$$'],
+    'class': 'logging.StreamHandler',
+},$END$

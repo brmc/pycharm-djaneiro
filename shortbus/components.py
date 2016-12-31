@@ -23,8 +23,8 @@ def warn_if_missing_templates(func):
 
 class ContextDefinition(object):
     def __init__(self, name='Python', value=True):
-        self.name = name
-        self.value = value
+        self.name: str = name
+        self.value: bool = value
 
     def __eq__(self, other):
         return self.name == other.name and self.value == other.value
@@ -39,10 +39,10 @@ class ContextDefinition(object):
 class VariableDefinition(object):
     def __init__(self, name, defaultValue='', expression='',
                  alwaysStopAt=True):
-        self.name = name
-        self.defaultValue = defaultValue.strip('"\'')
-        self.expression = expression
-        self.alwaysStopAt = alwaysStopAt
+        self.name: str = name
+        self.defaultValue: str = defaultValue.strip('"\'')
+        self.expression: str = expression
+        self.alwaysStopAt: bool = alwaysStopAt
 
     def __eq__(self, other):
         return self.name == other.name \
@@ -54,15 +54,16 @@ class VariableDefinition(object):
         return {
             'name': self.name,
             'expression': self.expression,
-            'defaultValue': '"{}"'.format(self.defaultValue) if self.defaultValue else '',
+            'defaultValue': f'"{self.defaultValue}"',
+
             'alwaysStopAt': str(self.alwaysStopAt).lower()
         }
 
 
 class TemplateDefinition(object):
-    variable_prefix = 'VAR{}'
-    VARIABLE_WRAPPER = '${}$'
-    VARIABLE_REGEX = r'(?P<raw>\$(?P<variable>[\w_]*)?:?(?P<default>[\w_]*)?\$)'
+    variable_prefix: str = 'VAR{}'
+    VARIABLE_WRAPPER: str = '${}$'
+    VARIABLE_REGEX = r'(?P<raw>\$(?P<variable>[\w_\.]*)?:?(?P<default>[^\$]*)?\$)'
     SUBLIME_CONTENT_REGEX = r'\<\!\[CDATA\[(.*)\]\]'
     SUBLIME_VARIABLE_REGEX = r'(?P<raw>\$\{?(?P<variable>\d):?(?P<default>[\w_\s]*)\}?)'
 
@@ -112,7 +113,7 @@ class TemplateDefinition(object):
 
     def format_description_lazily(self):
         name = self.value.split('.')[0].split('(')[0]
-        self.description = "{} ({})".format(name, self.value)
+        self.description = f"{name} ({self.value})"
 
     def to_jetbrains_dict(self):
         return {
@@ -172,8 +173,9 @@ class TemplateDefinition(object):
             variable_name = variable.get('name')
 
             if variable_name not in variables.keys():
-                message = "Variable '{}' not found in '{}': {}. Skipping..."
-                warnings.warn(message.format(variable_name, name, value))
+                message = "Variable '{variable_name}' not found in '{name}': " \
+                          "{value}. Skipping..."
+                warnings.warn(message)
                 continue
 
             variables[variable_name] = VariableDefinition(**variable)

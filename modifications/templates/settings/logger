@@ -1,0 +1,5 @@
+'$:django$': {
+    'handlers': ['$$'],
+    'level': '$:INFO$',
+    'propagate': $:True$,
+}$END$

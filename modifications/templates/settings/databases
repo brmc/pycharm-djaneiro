@@ -1,0 +1,25 @@
+DATABASES = {
+    '$DBNAME:default$': {
+        'ENGINE': 'django.db.backends.$:postgresql$',
+        'NAME': '$:mydatabase$',
+        'USER': '$:mydatabaseuser$',
+        'PASSWORD': '$:mypassword$',
+        'HOST': '$:127.0.0.1$',
+        'PORT': '$:5432$',
+        'ATOMIC_REQUESTS': $:False$,
+        'AUTOCOMMIT': $:True$,
+        'CONN_MAX_AGE': $:0$,
+        'OPTIONS': $:{}$,
+        'TIME_ZONE': $:None$,
+        'TEST': {
+            'NAME': 'test_$DBNAME$',
+            'CHARSET': $:None$,
+            'COLLATION': $:None$,
+            'DEPENDENCIES': [$DBNAME$],
+            'MIRROR': $:None$,
+            'SERIALIZE': $:True$,
+        },
+
+    }
+}
+$END$
