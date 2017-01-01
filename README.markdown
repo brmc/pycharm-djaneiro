@@ -1,17 +1,17 @@
 # **Djaneiro for Pycharm** #
 
+
 This is a port of the Djaneiro plugin for Sublime Text to Jetbrains'  
 Pycharm IDE and the tools used to transpile the Sublime test snippets  
 to Jetbrains live templates.
 
-It's basically a collection of convenient abbreviations encountered when  
-building Django applications (with a couple generic python uses)  
-specifically aimed at models, forms, views, templates, properties,  
-basic python objects, and other commonly typed patterns.
+It's a collection of live templates for common patterns encountered
+when building Django applications (with a couple generic python uses)  
+specifically useful for models, forms, widgets, views, and templates.
 
-Originally it was a pure port of the plugin, but it has been developed  
-further. Full details of the original plugin can be found at their repo on  
-github: [https://github.com/squ1b3r/Djaneiro](https://github.com/squ1b3r/Djaneiro)
+This was originally a pure port of the plugin, but new features have  
+been added not found in the original plugin. The Sublime text plugin can be  
+found here: [https://github.com/squ1b3r/Djaneiro](https://github.com/squ1b3r/Djaneiro)
 
 In addition to what is listed there, the pycharm plugin includes templates  
 for:
@@ -19,7 +19,7 @@ for:
     * Postgres models and forms
     * Widgets
     * Settings
-    * All other fields have been updated to match django 1.10
+    * Other missing fields found in django 1.10
 
 ## Contents
 
@@ -38,6 +38,7 @@ for:
   * [Forms](#forms)
   * [Postgres](#postgres)
   * [Widgets](#widgets)
+  * [Settings](#settings)
 
 
 ## Requirements ##
@@ -101,7 +102,7 @@ included with the original plugin
 
 requirements: 
 
-    python3.5+  
+    python3.6+  
     pyyaml   
     lxml  
 

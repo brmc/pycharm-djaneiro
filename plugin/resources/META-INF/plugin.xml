@@ -43,6 +43,11 @@
     npdb --> from nose.tools import set_trace; set_trace()
     </code></pre>
 
+    <p>
+    For a full listing of the abbreviations, see the github repo:
+    <a href=''></a>
+    </p>
+
     ]]></description>
 
     <change-notes><![CDATA[
