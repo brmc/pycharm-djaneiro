@@ -1,23 +1,15 @@
 <idea-plugin version="2">
     <id>pw.mcclure.djaneiro.pycharm</id>
     <name>Djaneiro for PyCharm</name>
-    <version>1.1</version>
+    <version>1.2</version>
     <vendor email="jetbrains@mcclure.pw" url="https://www.mcclure.pw">Brian McClure</vendor>
 
     <description><![CDATA[
-      <p>This was originally a port of the Djaneiro plugin for Sublime Text. It has since diverged
-      a bit.</p>
-      <p>It's basically a collection of convenient abbreviations encountered when
-    building Django applications (with a couple generic python uses) specifically
-    aimed at models, forms, widgets, views, templates, properties, basic python objects,
-    and other commonly typed patterns.</p>
-
-    <p>
-      (Full details and docs can be found at
-    their repo on github: <a href='https://github.com/squ1b3r/Djaneiro'>https://github.com/squ1b3r/Djaneiro</a>)
-    </p>
-
-    <p>Source code for this plugin: <a href='https://github.com/brmc/pycharm-djaneiro'>https://github.com/brmc/pycharm-djaneiro</a></p>
+      <p>This was originally a pure port of the Djaneiro plugin for Sublime Text,
+      but new features have been added not found in the original plugin.</p>
+      <p>It's a collection of live templates for common patterns encountered
+      when building Django applications (with a couple generic python uses) specifically
+    useful for models, forms, widgets, views, and templates.
 
     <p>For example, assuming '-->' means 'expands to', the following expansions
     for models and forms can be made:
@@ -28,32 +20,47 @@
     fchar --> $FIELDNAME$ = forms.CharField($ARGS$)$END$
     </code></pre>
 
-
     <p>Where each variable between dollar signs($) (e.g., $FIELDNAME$, $NAME$, etc)
     is a stopping point for the cursor each time enter is pressed.</p>
 
-    <p>The naming convention is generally 'm' or 'f' for 'model' or 'field,'
-    respectively, followed by a shortened version of the field name
-    (with some intuitive exceptions: fk, m2m, o2o).  </p>
+    <p> Consider the following caveats:
+
+    <ul>
+        <li>Model field templates are prefixed by 'm' with the exception of `fk`,
+        `m2m`, and `o2o` fields</li>
+        <li>Form field templates are prefixed by 'f'</li>
+        <li>Widgets are prefixed by 'w'</li>
+        <li>Settings are prefixed by 's'</li>
+        <li>Template templates have no prefix, nor do generic python templates</li>
+    </ul>
+
+    </p>
 
     <p> Examples of other types of templates for other contexts are:
     <pre><code>
     ifelse --> {% if %} $START$ {% else %} $STOP$ {% endif %} $END$
     Model --> (this generates a skeleton for a simple model class)
     npdb --> from nose.tools import set_trace; set_trace()
-    And a bunch more...
     </code></pre>
 
     ]]></description>
 
     <change-notes><![CDATA[
+    v1.2 -
+    <ul>
+        <li>Added live templates for django settings</li>
+        <li>Migrated to python 3.6 with no plans for backwards compatibility</li>
+        <li>fixed bug in postgres fields. they no longer expand to one giant variable</li>
+        <li>removed duplication of `fip`</li>
+    </ul>
+
     v1.1 -
     <ul>
-    <li>Updated templates from upstream</li>
-    <li>Included missing fields for models and forms</li>
-    <li>Added Postgres model and form fields</li>
-    <li>Added Widgets</li>
-    <li>Added transpiler to convert between sublime text and jetbrains</li>
+        <li>Updated templates from upstream</li>
+        <li>Included missing fields for models and forms</li>
+        <li>Added Postgres model and form fields</li>
+        <li>Added Widgets</li>
+        <li>Added transpiler to convert between sublime text and jetbrains</li>
     </ul>
     v1.0 -
       <li>No changes since I originally commited to my github repo, which means there
