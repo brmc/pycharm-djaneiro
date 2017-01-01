@@ -224,6 +224,9 @@ group and stored in `modifications/output/markdown`
 
 ## Additional Abbreviations
 
+This section notes the features not found in the sublime text plugin.  
+A full listing of all the abbreviations in the docs
+
 ###Models
 
 |abbreviation|template|

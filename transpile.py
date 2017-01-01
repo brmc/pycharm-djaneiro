@@ -140,7 +140,7 @@ if __name__ == '__main__':
             elif source == 'modifications':
                 transpiler.import_from_yml(paths[source])
                 transpiler.merge_all_templates()
-                transpiler.export_to_markdown(group, 'modifications/output/markdown')
+                transpiler.export_to_markdown(group, 'docs')
                 transpiler.export_abbreviations(group, 'modifications/output/abbreviations')
 
         transpiler.merge_all_templates()

@@ -126,14 +126,13 @@ class Transpiler(object):
         line_format = '|{}|{}|\n'
 
         with open(output_file, 'w') as file:
-            file.write('###' + group + '\n\n')
+            file.write(f'### {group}\n\n')
             file.write(line_format.format('abbreviation', 'template'))
             file.write(line_format.format(':--', ':--'))
 
             for _,template in self.templates.items():
                 data = template.value.replace('\n', '<br>')
                 file.write(f'|{template.name}|<pre>{data}</pre>|\n')
-                #file.write(line_format.format(template.name, data))
 
         return self
 
