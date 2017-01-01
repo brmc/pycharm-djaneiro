@@ -1,233 +1,269 @@
 <templateSet group="Djaneiro: Models">
-    <template name="mauto" value="$VAR$ = models.AutoField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mbigint" value="$VAR$ = models.BigIntegerField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mbigauto" value="$VAR$ = models.BigAutoField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="&quot;$VAR2$&quot;" alwaysStopAt="true" />
-        <context>
-            <option name="" value="true" />
-        </context>
-    </template>
-    <template name="mbin" value="$VAR$ = models.BinaryField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
-        <context>
-            <option name="" value="true" />
-        </context>
-    </template>
-    <template name="mbool" value="$VAR$ = models.BooleanField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mchar" value="$VAR$ = models.CharField($VAR2$, max_length=50)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mcoseint" value="$VAR$ = models.CommaSeparatedIntegerField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mdate" value="$VAR$ = models.DateField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mdatetime" value="$VAR$ = models.DateTimeField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mdecimal" value="$VAR$ = models.DecimalField($VAR2$, max_digits=5, decimal_places=2)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mdur" value="$VAR$ = models.DurationField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
-        <context>
-            <option name="" value="true" />
-        </context>
-    </template>
-    <template name="memail" value="$VAR$ = models.EmailField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mfile" value="$VAR$ = models.FileField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mfilepath" value="$VAR$ = models.FilePathField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mfloat" value="$VAR$ = models.FloatField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mimg" value="$VAR$ = models.ImageField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mint" value="$VAR$ = models.IntegerField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mip" value="$VAR$ = models.GenericIPAddressField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mgip" value="$VAR$ = models.GenericIPAddressField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
-        <context>
-            <option name="" value="true" />
-        </context>
-    </template>
-    <template name="mnullbool" value="$VAR$ = models.NullBooleanField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mphone" value="$VAR$ = models.PhoneNumberField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mposint" value="$VAR$ = models.PositiveIntegerField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mpossmallint" value="$VAR$ = models.PositiveSmallIntegerField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mslug" value="$VAR$ = models.SlugField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="msmallint" value="$VAR$ = models.SmallIntegerField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mtext" value="$VAR$ = models.TextField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mtime" value="$VAR$ = models.TimeField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="murl" value="$VAR$ = models.URLField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="musstate" value="$VAR$ = models.USStateField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="mxml" value="$VAR$ = models.XMLField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="fk" value="$VAR$ = models.ForeignKey($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="m2m" value="$VAR$ = models.ManyToManyField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
-    <template name="o2o" value="$VAR$ = models.OneToOneField($VAR2$)" toReformat="false" toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="Python" value="true" />
-        </context>
-    </template>
+  <template name="fk" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.ForeignKey($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="m2m" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.ManyToManyField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mauto" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.AutoField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mbigint" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.BigIntegerField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mbool" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.BooleanField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mchar" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.CharField($VAR2$, max_length=50)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mcoseint" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.CommaSeparatedIntegerField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mdate" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.DateField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mdatetime" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.DateTimeField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mdecimal" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.DecimalField($VAR2$, max_digits=5, decimal_places=2)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mduration" toReformat="true" toShortenFQNames="true" value="$VAR1$ = models.DurationField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR1"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="memail" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.EmailField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mfile" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.FileField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mfilepath" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.FilePathField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mfloat" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.FloatField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mimg" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.ImageField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mint" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.IntegerField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mip" toReformat="true" toShortenFQNames="true" value="$VAR1$ = models.GenericIPAddressField(protocol='$VAR2$', unpack_ipv4=$VAR3$)$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR1"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;both&quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;False&quot;" expression="" name="VAR3"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="END"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mnullbool" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.NullBooleanField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="Model" toReformat="true" toShortenFQNames="true" value="&#10;class $VAR1$(models.Model):&#10;&#10;    class Meta:&#10;        verbose_name = &quot;$VAR1$&quot;&#10;        verbose_name_plural = &quot;$VAR1$s&quot;&#10;&#10;    def __str__(self):&#10;        pass&#10;    ">
+    <variable alwaysStopAt="true" defaultValue="&quot;s&quot;" expression="" name="VAR1"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="Model_full" toReformat="true" toShortenFQNames="true" value="&#10;class $VAR1$(models.Model):&#10;    $VAR2$# TODO: Define fields here}&#10;&#10;    class Meta:&#10;        verbose_name = &quot;$VAR1$&quot;&#10;        verbose_name_plural = &quot;$VAR1$s&quot;&#10;&#10;    def __str__(self):&#10;        pass&#10;&#10;    def save(self):&#10;        pass&#10;&#10;    @models.permalink&#10;    def get_absolute_url(self):&#10;        return ('')&#10;&#10;    $VAR3$# TODO: Define custom methods here}&#10;&#10;    ">
+    <variable alwaysStopAt="true" defaultValue="&quot;s&quot;" expression="" name="VAR1"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR3"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mphone" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.PhoneNumberField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mposint" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.PositiveIntegerField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mpossmallint" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.PositiveSmallIntegerField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mslug" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.SlugField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="msmallint" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.SmallIntegerField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mtext" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.TextField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mtime" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.TimeField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="murl" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.URLField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="musstate" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.USStateField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mxml" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.XMLField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="o2o" toReformat="false" toShortenFQNames="true" value="$VAR$ = models.OneToOneField($VAR2$)">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mbigauto" toReformat="true" toShortenFQNames="true" value="$VAR1$ = models.BigAutoField($VAR2$)$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR1"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="END"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mbin" toReformat="true" toShortenFQNames="true" value="$VAR1$ = models.BinaryField($VAR2$)$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR1"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="END"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mdur" toReformat="true" toShortenFQNames="true" value="$VAR1$ = models.DurationField($VAR2$)$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR1"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="END"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="mgip" toReformat="true" toShortenFQNames="true" value="$VAR1$ = models.GenericIPAddressField(protocol='$VAR2$', unpack_ipv4=$VAR3$)$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR1"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;both&quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;False&quot;" expression="" name="VAR3"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="END"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
+  <template name="muuid" toReformat="true" toShortenFQNames="true" value="$VAR1$ = models.UUIDField($VAR2$)$END$">
+    <variable alwaysStopAt="true" defaultValue="&quot;FIELDNAME&quot;" expression="" name="VAR1"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="VAR2"/>
+    <variable alwaysStopAt="true" defaultValue="&quot;&quot;" expression="" name="END"/>
+    <context>
+      <option name="Python" value="true"/>
+    </context>
+  </template>
 </templateSet>

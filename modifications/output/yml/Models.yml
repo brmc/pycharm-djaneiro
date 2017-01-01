@@ -181,18 +181,18 @@
 - context:
   - name: Python
     value: true
-  description: DurationField (mduration)
+  description: ''
   name: mduration
   raw: $VAR1$ = models.DurationField($VAR2$)
   shortcut: TAB
   toReformat: true
   toShortenFQNames: true
   variables:
-  - alwaysStopAt: true
+  - alwaysStopAt: 'true'
     defaultValue: FIELDNAME
     expression: ''
     name: VAR1
-  - alwaysStopAt: true
+  - alwaysStopAt: 'true'
     defaultValue: ''
     expression: ''
     name: VAR2
@@ -309,19 +309,27 @@
     value: true
   description: ''
   name: mip
-  raw: $VAR$ = models.IPAddressField($VAR2$)
+  raw: $VAR1$ = models.GenericIPAddressField(protocol='$VAR2$', unpack_ipv4=$VAR3$)$END$
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
   variables:
-  - alwaysStopAt: 'true'
+  - alwaysStopAt: true
     defaultValue: FIELDNAME
     expression: ''
-    name: VAR
-  - alwaysStopAt: 'true'
-    defaultValue: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: both
     expression: ''
     name: VAR2
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
 - context:
   - name: Python
     value: true
@@ -343,7 +351,7 @@
 - context:
   - name: Python
     value: true
-  description: Model
+  description: ''
   name: Model
   raw: "\nclass $VAR1$(models.Model):\n\n    class Meta:\n        verbose_name = \"\
     $VAR1$\"\n        verbose_name_plural = \"$VAR1$s\"\n\n    def __str__(self):\n\
@@ -352,14 +360,14 @@
   toReformat: true
   toShortenFQNames: true
   variables:
-  - alwaysStopAt: true
+  - alwaysStopAt: 'true'
     defaultValue: s
     expression: ''
     name: VAR1
 - context:
   - name: Python
     value: true
-  description: Model (full)
+  description: ''
   name: Model_full
   raw: "\nclass $VAR1$(models.Model):\n    $VAR2$# TODO: Define fields here}\n\n \
     \   class Meta:\n        verbose_name = \"$VAR1$\"\n        verbose_name_plural\
@@ -370,15 +378,15 @@
   toReformat: true
   toShortenFQNames: true
   variables:
-  - alwaysStopAt: true
+  - alwaysStopAt: 'true'
     defaultValue: s
     expression: ''
     name: VAR1
-  - alwaysStopAt: true
+  - alwaysStopAt: 'true'
     defaultValue: ''
     expression: ''
     name: VAR2
-  - alwaysStopAt: true
+  - alwaysStopAt: 'true'
     defaultValue: ''
     expression: ''
     name: VAR3
@@ -580,3 +588,117 @@
     defaultValue: ''
     expression: ''
     name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mbigauto
+  raw: $VAR1$ = models.BigAutoField($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mbin
+  raw: $VAR1$ = models.BinaryField($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mdur
+  raw: $VAR1$ = models.DurationField($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: mgip
+  raw: $VAR1$ = models.GenericIPAddressField(protocol='$VAR2$', unpack_ipv4=$VAR3$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: both
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: muuid
+  raw: $VAR1$ = models.UUIDField($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END

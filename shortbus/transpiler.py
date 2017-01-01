@@ -120,6 +120,41 @@ class Transpiler(object):
 
         return self
 
+    def export_to_markdown(self, group, output_path: str) -> 'Transpiler':
+        output_file = os.path.join(output_path, self.name + '.markdown')
+
+        line_format = '|{}|{}|\n'
+
+        with open(output_file, 'w') as file:
+            file.write('###' + group + '\n\n')
+            file.write(line_format.format('abbreviation', 'template'))
+            file.write(line_format.format(':--', ':--'))
+
+            for _,template in self.templates.items():
+                data = template.value.replace('\n', '<br>')
+                file.write(f'|{template.name}|<pre>{data}</pre>|\n')
+                #file.write(line_format.format(template.name, data))
+
+        return self
+
+    def export_abbreviations(self, group, output_path: str) -> 'Transpiler':
+        extension_mapping = {
+            'Python': '.py',
+            'Django': '.html'
+        }
+
+        arbitrary_template  = next(iter(self.templates.values()))
+        context = arbitrary_template.context_options[0].name
+        extension = extension_mapping[context]
+        output_file = os.path.join(output_path, f'{self.name}{extension}')
+
+        with open(output_file, 'w') as file:
+            for _,template in self.templates.items():
+                file.write(f'{template.name}\n')
+
+        return self
+
+
     @warn_if_missing_templates
     def export_to_yml(self, output_path: str) -> 'Transpiler':
         stream = open(output_path, 'w')

@@ -1,11 +1,4 @@
 <templateSet group="Djaneiro: Completions">
-  <template name="fip" value="$VAR$ = forms.IPAddressField($VAR2$)" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="END" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
   <template name="choices" value="choices='$VAR$'$END$" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="END" expression="" defaultValue="" alwaysStopAt="true" />

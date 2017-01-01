@@ -1,4 +1,4 @@
-'$:name': {
+'$:name$': {
     '()': '$:ClassName$',
     'format': '$$',
 }$END$

@@ -1,19 +1,23 @@
 <idea-plugin version="2">
     <id>pw.mcclure.djaneiro.pycharm</id>
     <name>Djaneiro for PyCharm</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <vendor email="jetbrains@mcclure.pw" url="https://www.mcclure.pw">Brian McClure</vendor>
 
     <description><![CDATA[
-      <p>This is a port of the Djaneiro plugin for Sublime Text (Kudos to those guys. Full details and docs can be found at
-    their repo on github: <a href='https://github.com/squ1b3r/Djaneiro'>https://github.com/squ1b3r/Djaneiro</a>)</p>
+      <p>This was originally a port of the Djaneiro plugin for Sublime Text. It has since diverged
+      a bit.</p>
+      <p>It's basically a collection of convenient abbreviations encountered when
+    building Django applications (with a couple generic python uses) specifically
+    aimed at models, forms, widgets, views, templates, properties, basic python objects,
+    and other commonly typed patterns.</p>
+
+    <p>
+      (Full details and docs can be found at
+    their repo on github: <a href='https://github.com/squ1b3r/Djaneiro'>https://github.com/squ1b3r/Djaneiro</a>)
+    </p>
 
     <p>Source code for this plugin: <a href='https://github.com/brmc/pycharm-djaneiro'>https://github.com/brmc/pycharm-djaneiro</a></p>
-
-    <p>It's basically a collection of convenient abbreviations encountered when
-    building Django applications (with a couple generic python uses) specifically
-    aimed at models, forms, views, templates, properties, basic python objects,
-    and other commonly typed patterns.</p>
 
     <p>For example, assuming '-->' means 'expands to', the following expansions
     for models and forms can be made:
@@ -43,9 +47,17 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    v1.1 -
+    <ul>
+    <li>Updated templates from upstream</li>
+    <li>Included missing fields for models and forms</li>
+    <li>Added Postgres model and form fields</li>
+    <li>Added Widgets</li>
+    <li>Added transpiler to convert between sublime text and jetbrains</li>
+    </ul>
     v1.0 -
-      No changes since I originally commited to my github repo, which means there
-      is no support for new fields added in the last 2 years.
+      <li>No changes since I originally commited to my github repo, which means there
+      is no support for new fields added in the last 2 years.</li>
     ]]>
     </change-notes>
 

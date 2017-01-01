@@ -15,11 +15,10 @@ DATABASES = {
             'NAME': 'test_$DBNAME$',
             'CHARSET': $:None$,
             'COLLATION': $:None$,
-            'DEPENDENCIES': [$DBNAME$],
+            'DEPENDENCIES': ['$DBNAME$', $$],
             'MIRROR': $:None$,
             'SERIALIZE': $:True$,
         },
-
     }
 }
 $END$

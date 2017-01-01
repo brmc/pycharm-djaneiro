@@ -1,15 +1,15 @@
 - context:
   - name: Python
     value: true
-  description: null
+  description: ''
   name: __init__
   raw: "\ndef __init__(self, *args, **kwargs):\n    super($VAR1$, self).__init__(*args,\
-    \ **kwargs)\n"
+    \ **kwargs)\n$END$"
   shortcut: TAB
   toReformat: true
   toShortenFQNames: true
   variables:
-  - alwaysStopAt: true
+  - alwaysStopAt: 'true'
     defaultValue: CLASS_NAME
     expression: ''
     name: VAR1
@@ -18,9 +18,9 @@
     value: true
   description: ''
   name: ipdb
-  raw: import ipdb; ipdb.set_trace()
+  raw: import ipdb; ipdb.set_trace()$END$
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
   variables: []
 - context:
@@ -28,9 +28,9 @@
     value: true
   description: ''
   name: npdb
-  raw: from nose.tools import set_trace; set_trace()
+  raw: from nose.tools import set_trace; set_trace()$END$
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
   variables: []
 - context:
@@ -40,7 +40,7 @@
   name: pdb
   raw: import pdb; pdb.set_trace()
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
   variables: []
 - context:
@@ -48,9 +48,9 @@
     value: true
   description: ''
   name: traceback
-  raw: import traceback; traceback.print_exc();
+  raw: import traceback; traceback.print_exc();$END$
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
   variables: []
 - context:
@@ -58,8 +58,8 @@
     value: true
   description: ''
   name: utfc
-  raw: '# -*- coding: utf-8 -*-'
+  raw: '# -*- coding: utf-8 -*-$END$'
   shortcut: TAB
-  toReformat: false
+  toReformat: true
   toShortenFQNames: true
   variables: []

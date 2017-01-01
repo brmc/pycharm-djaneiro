@@ -1,0 +1,488 @@
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wcheck
+  raw: $VAR1$ = forms.CheckboxInput(check_test=$VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wcheckmulti
+  raw: $VAR1$ = forms.CheckboxSelectMultiple($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wclearablefile
+  raw: $VAR1$ = forms.ClearableFileInput($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wdate
+  raw: $VAR1$ = forms.DateInput(format=$VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wdatetime
+  raw: $VAR1$ = forms.DateTimeInput(format=$VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wemail
+  raw: $VAR1$ = forms.EmailInput($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wfile
+  raw: $VAR1$ = forms.FileInput($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: whidden
+  raw: $VAR1$ = forms.HiddenInput($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wmultihidden
+  raw: $VAR1$ = forms.MultipleHiddenInput($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wnullbool
+  raw: $VAR1$ = forms.NullBooleanSelect($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wnum
+  raw: $VAR1$ = forms.NumberInput($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wpass
+  raw: $VAR1$ = forms.PasswordInput(render_value=$VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wradio
+  raw: $VAR1$ = forms.RadioSelect($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wselect
+  raw: $VAR1$ = forms.Select(choices=$VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wselectdate
+  raw: $VAR1$ = forms.SelectDateWidget($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wselectmulti
+  raw: $VAR1$ = forms.SelectMultiple($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wsplitdatetime
+  raw: $VAR1$ = forms.SplitDateTimeWidget(date_format=$VAR2$, time_format=$VAR3$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wsplithiddendatetime
+  raw: $VAR1$ = forms.SplitHiddenDateTimeWidget($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wtext
+  raw: $VAR1$ = forms.TextInput($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wtextarea
+  raw: $VAR1$ = forms.Textarea($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wtime
+  raw: $VAR1$ = forms.TimeInput(format=$VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: wurl
+  raw: $VAR1$ = forms.URLInput($VAR2$)$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: FIELDNAME
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END

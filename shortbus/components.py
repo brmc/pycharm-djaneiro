@@ -161,7 +161,7 @@ class TemplateDefinition(object):
                       "raw or template field. fix it!\n"
                 raise KeyError(msg)
             except FileNotFoundError as _:
-                raise FileNotFoundError('Aint no file. get out')
+                raise FileNotFoundError(f'Aint no file. get out: {path}')
 
         context = yml.pop('context', [{}])
         context_options = [ContextDefinition(**x) for x in context]

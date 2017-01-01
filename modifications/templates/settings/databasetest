@@ -1,0 +1,8 @@
+'TEST': {
+    'NAME': $:None$,
+    'CHARSET': $:None$,
+    'COLLATION': $:None$,
+    'DEPENDENCIES': [$$],
+    'MIRROR': $:None$,
+    'SERIALIZE': $:True$,
+}

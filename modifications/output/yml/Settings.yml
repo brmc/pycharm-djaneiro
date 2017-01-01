@@ -1,0 +1,3102 @@
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sabsolute_url_overrides
+  raw: ABSOLUTE_URL_OVERRIDES = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '{}'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sadmins
+  raw: ADMINS = [('$VAR1$', '$VAR2$'), ]$END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: USER
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: EMAIL
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sallowed_hosts
+  raw: ALLOWED_HOSTS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '[]'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sappend_slash
+  raw: APPEND_SLASH = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'True'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sauth_password_validators
+  raw: AUTH_PASSWORD_VALIDATORS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '[]'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sauth_user_model
+  raw: AUTH_USER_MODEL = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: auth.User
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sauthentication_backends
+  raw: AUTHENTICATION_BACKENDS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '[''django.contrib.auth.backends.ModelBackend'']'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: scache_middleware_alias
+  raw: CACHE_MIDDLEWARE_ALIAS = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: default
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: scache_middleware_key_prefix
+  raw: CACHE_MIDDLEWARE_KEY_PREFIX = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: scache_middleware_seconds
+  raw: CACHE_MIDDLEWARE_SECONDS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '600'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: scaches
+  raw: "\nCACHES = {\n    '$VAR1$': {\n        'BACKEND': 'django.core.cache.backends.$VAR2$',\n\
+    \        'KEY_FUNCTION': $VAR3$,\n        'KEY_PREFIX': '$VAR4$',\n        'LOCATION':\
+    \ '$VAR5$',\n        'OPTIONS': $VAR6$,\n        'TIMEOUT': $VAR7$,\n        'VERSION':\
+    \ $VAR8$\n    },\n    $VAR9$\n}\n$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: default
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: locmem.LocMemCache
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR4
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR5
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR6
+  - alwaysStopAt: true
+    defaultValue: '300'
+    expression: ''
+    name: VAR7
+  - alwaysStopAt: true
+    defaultValue: '1'
+    expression: ''
+    name: VAR8
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR9
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: scsrf_cookie_age
+  raw: CSRF_COOKIE_AGE = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 60 * 60 * 24 * 7 * 52
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: scsrf_cookie_domain
+  raw: CSRF_COOKIE_DOMAIN = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: scsrf_cookie_httponly
+  raw: CSRF_COOKIE_HTTPONLY = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: scsrf_cookie_name
+  raw: CSRF_COOKIE_NAME = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: csrftoken
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: scsrf_cookie_path
+  raw: CSRF_COOKIE_PATH = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: /
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: scsrf_cookie_secure
+  raw: CSRF_COOKIE_SECURE = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: scsrf_failure_view
+  raw: CSRF_FAILURE_VIEW = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: django.views.csrf.csrf_failure
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: scsrf_header_name
+  raw: CSRF_HEADER_NAME = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: HTTP_X_CSRFTOKEN
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: scsrf_trusted_origins
+  raw: CSRF_TRUSTED_ORIGINS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '[]'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdata_upload_max_memory_size
+  raw: DATA_UPLOAD_MAX_MEMORY_SIZE = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '2621440'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdata_upload_max_number_fields
+  raw: DATA_UPLOAD_MAX_NUMBER_FIELDS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '1000'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdatabase
+  raw: "'$DBNAME$': {\n    'ENGINE': 'django.db.backends.$VAR2$',\n    'NAME': '$VAR3$',\n\
+    \    'USER': '$VAR4$',\n    'PASSWORD': '$VAR5$',\n    'HOST': '$VAR6$',\n   \
+    \ 'PORT': '$VAR7$',\n    'ATOMIC_REQUESTS': $VAR8$,\n    'AUTOCOMMIT': $VAR9$,\n\
+    \    'CONN_MAX_AGE': $VAR10$,\n    'OPTIONS': $VAR11$,\n    'TIME_ZONE': $VAR12$,\n\
+    \    'TEST': {\n        'NAME': 'test_$DBNAME$',\n        'CHARSET': $VAR14$,\n\
+    \        'COLLATION': $VAR15$,\n        'DEPENDENCIES': ['$DBNAME$', $VAR17$],\n\
+    \        'MIRROR': $VAR18$,\n        'SERIALIZE': $VAR19$,\n    },\n}"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: DBNAME
+  - alwaysStopAt: true
+    defaultValue: postgresql
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: mydatabase
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: mydatabaseuser
+    expression: ''
+    name: VAR4
+  - alwaysStopAt: true
+    defaultValue: mypassword
+    expression: ''
+    name: VAR5
+  - alwaysStopAt: true
+    defaultValue: 127.0.0.1
+    expression: ''
+    name: VAR6
+  - alwaysStopAt: true
+    defaultValue: '5432'
+    expression: ''
+    name: VAR7
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR8
+  - alwaysStopAt: true
+    defaultValue: 'True'
+    expression: ''
+    name: VAR9
+  - alwaysStopAt: true
+    defaultValue: '0'
+    expression: ''
+    name: VAR10
+  - alwaysStopAt: true
+    defaultValue: '{}'
+    expression: ''
+    name: VAR11
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR12
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR14
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR15
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR17
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR18
+  - alwaysStopAt: true
+    defaultValue: 'True'
+    expression: ''
+    name: VAR19
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdatabase_routers
+  raw: DATABASE_ROUTERS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '[]'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdatabases
+  raw: "DATABASES = {\n    '$DBNAME$': {\n        'ENGINE': 'django.db.backends.$VAR2$',\n\
+    \        'NAME': '$VAR3$',\n        'USER': '$VAR4$',\n        'PASSWORD': '$VAR5$',\n\
+    \        'HOST': '$VAR6$',\n        'PORT': '$VAR7$',\n        'ATOMIC_REQUESTS':\
+    \ $VAR8$,\n        'AUTOCOMMIT': $VAR9$,\n        'CONN_MAX_AGE': $VAR10$,\n \
+    \       'OPTIONS': $VAR11$,\n        'TIME_ZONE': $VAR12$,\n        'TEST': {\n\
+    \            'NAME': 'test_$DBNAME$',\n            'CHARSET': $VAR14$,\n     \
+    \       'COLLATION': $VAR15$,\n            'DEPENDENCIES': ['$DBNAME$', $VAR17$],\n\
+    \            'MIRROR': $VAR18$,\n            'SERIALIZE': $VAR19$,\n        },\n\
+    \    }\n}\n$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: DBNAME
+  - alwaysStopAt: true
+    defaultValue: postgresql
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: mydatabase
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: mydatabaseuser
+    expression: ''
+    name: VAR4
+  - alwaysStopAt: true
+    defaultValue: mypassword
+    expression: ''
+    name: VAR5
+  - alwaysStopAt: true
+    defaultValue: 127.0.0.1
+    expression: ''
+    name: VAR6
+  - alwaysStopAt: true
+    defaultValue: '5432'
+    expression: ''
+    name: VAR7
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR8
+  - alwaysStopAt: true
+    defaultValue: 'True'
+    expression: ''
+    name: VAR9
+  - alwaysStopAt: true
+    defaultValue: '0'
+    expression: ''
+    name: VAR10
+  - alwaysStopAt: true
+    defaultValue: '{}'
+    expression: ''
+    name: VAR11
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR12
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR14
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR15
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR17
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR18
+  - alwaysStopAt: true
+    defaultValue: 'True'
+    expression: ''
+    name: VAR19
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdatabasetest
+  raw: "'TEST': {\n    'NAME': $VAR1$,\n    'CHARSET': $VAR2$,\n    'COLLATION': $VAR3$,\n\
+    \    'DEPENDENCIES': [$VAR4$],\n    'MIRROR': $VAR5$,\n    'SERIALIZE': $VAR6$,\n\
+    }"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR4
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR5
+  - alwaysStopAt: true
+    defaultValue: 'True'
+    expression: ''
+    name: VAR6
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdate_format
+  raw: DATE_FORMAT = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: N j, Y
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdate_input_formats
+  raw: "DATE_INPUT_FORMATS = [\n    '%Y-%m-%d', '%m/%d/%Y', '%m/%d/%y',\n    '%b %d\
+    \ %Y', '%b %d, %Y',\n    '%d %b %Y', '%d %b, %Y',\n    '%B %d %Y', '%B %d, %Y',\n\
+    \    '%d %B %Y', '%d %B, %Y',\n    '$VAR1$'\n]\n$end$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: end
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdatetime_format
+  raw: DATETIME_FORMAT = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: N j, Y, P
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdatetime_input_formats
+  raw: "DATETIME_INPUT_FORMATS = [\n    '%Y-%m-%d %H:%M:%S',     # '2006-10-25 14:30:59'\n\
+    \    '%Y-%m-%d %H:%M:%S.%f',  # '2006-10-25 14:30:59.000200'\n    '%Y-%m-%d %H:%M',\
+    \        # '2006-10-25 14:30'\n    '%Y-%m-%d',              # '2006-10-25'\n \
+    \   '%m/%d/%Y %H:%M:%S',     # '10/25/2006 14:30:59'\n    '%m/%d/%Y %H:%M:%S.%f',\
+    \  # '10/25/2006 14:30:59.000200'\n    '%m/%d/%Y %H:%M',        # '10/25/2006\
+    \ 14:30'\n    '%m/%d/%Y',              # '10/25/2006'\n    '%m/%d/%y %H:%M:%S',\
+    \     # '10/25/06 14:30:59'\n    '%m/%d/%y %H:%M:%S.%f',  # '10/25/06 14:30:59.000200'\n\
+    \    '%m/%d/%y %H:%M',        # '10/25/06 14:30'\n    '%m/%d/%y',            \
+    \  # '10/25/06'\n]\n$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdebug
+  raw: DEBUG = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdebug_propagate_exceptions
+  raw: DEBUG_PROPAGATE_EXCEPTIONS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdecimal_separator
+  raw: DECIMAL_SEPARATOR = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: .
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdefault_charset
+  raw: DEFAULT_CHARSET = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: utf-8
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdefault_content_type
+  raw: DEFAULT_CONTENT_TYPE = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: text/html
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdefault_exception_reporter_filter
+  raw: DEFAULT_EXCEPTION_REPORTER_FILTER = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: django.views.debug.SafeExceptionReporterFilter
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdefault_file_storage
+  raw: DEFAULT_FILE_STORAGE = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: django.core.files.storage.FileSystemStorage
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdefault_from_email
+  raw: DEFAULT_FROM_EMAIL = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: webmaster@localhost
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdefault_index_tablespace
+  raw: DEFAULT_INDEX_TABLESPACE = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdefault_tablespace
+  raw: DEFAULT_TABLESPACE = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sdisallowed_user_agents
+  raw: DISALLOWED_USER_AGENTS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '[]'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: semail_backend
+  raw: EMAIL_BACKEND = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: django.core.mail.backends.smtp.EmailBackend
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: semail_host
+  raw: EMAIL_HOST = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: localhost
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: semail_host_password
+  raw: EMAIL_HOST_PASSWORD = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: semail_host_user
+  raw: EMAIL_HOST_USER = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: semail_port
+  raw: EMAIL_PORT = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '25'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: semail_ssl_certfile
+  raw: EMAIL_SSL_CERTFILE = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: semail_ssl_keyfile
+  raw: EMAIL_SSL_KEYFILE = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: semail_subject_prefix
+  raw: EMAIL_SUBJECT_PREFIX = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '[Django] '
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: semail_timeout
+  raw: EMAIL_TIMEOUT = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: semail_use_ssl
+  raw: EMAIL_USE_SSL = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: semail_use_tls
+  raw: EMAIL_USE_TLS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sfile_charset
+  raw: FILE_CHARSET = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: utf-8
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sfile_upload_directory_permissions
+  raw: FILE_UPLOAD_DIRECTORY_PERMISSIONS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sfile_upload_handlers
+  raw: "FILE_UPLOAD_HANDLERS = [\n    'django.core.files.uploadhandler.MemoryFileUploadHandler',\n\
+    \    'django.core.files.uploadhandler.TemporaryFileUploadHandler',\n]$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sfile_upload_max_memory_size
+  raw: FILE_UPLOAD_MAX_MEMORY_SIZE = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '2621440'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sfile_upload_permissions
+  raw: FILE_UPLOAD_PERMISSIONS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sfile_upload_temp_dir
+  raw: FILE_UPLOAD_TEMP_DIR = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sfirst_day_of_week
+  raw: FIRST_DAY_OF_WEEK = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '0'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sfixture_dirs
+  raw: FIXTURE_DIRS = [$VAR1$] $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sforce_script_name
+  raw: FORCE_SCRIPT_NAME = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sformat_module_path
+  raw: FORMAT_MODULE_PATH = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: signorable_404_urls
+  raw: IGNORABLE_404_URLS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '[]'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sinstalled_apps
+  raw: INSTALLED_APPS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '[]'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sinternal_ips
+  raw: INTERNAL_IPS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '[]'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slanguage_code
+  raw: LANGUAGE_CODE = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: en-us
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slanguage_cookie_age
+  raw: LANGUAGE_COOKIE_AGE = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slanguage_cookie_domain
+  raw: LANGUAGE_COOKIE_DOMAIN = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slanguage_cookie_name
+  raw: LANGUAGE_COOKIE_NAME = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: django_language
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slanguage_cookie_path
+  raw: LANGUAGE_COOKIE_PATH = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: /
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slanguages
+  raw: "LANGUAGES = [\n    ('af', gettext_noop('Afrikaans')),\n    ('ar', gettext_noop('Arabic')),\n\
+    \    ('ast', gettext_noop('Asturian')),\n    ('az', gettext_noop('Azerbaijani')),\n\
+    \    ('bg', gettext_noop('Bulgarian')),\n    ('be', gettext_noop('Belarusian')),\n\
+    \    ('bn', gettext_noop('Bengali')),\n    ('br', gettext_noop('Breton')),\n \
+    \   ('bs', gettext_noop('Bosnian')),\n    ('ca', gettext_noop('Catalan')),\n \
+    \   ('cs', gettext_noop('Czech')),\n    ('cy', gettext_noop('Welsh')),\n    ('da',\
+    \ gettext_noop('Danish')),\n    ('de', gettext_noop('German')),\n    ('dsb', gettext_noop('Lower\
+    \ Sorbian')),\n    ('el', gettext_noop('Greek')),\n    ('en', gettext_noop('English')),\n\
+    \    ('en-au', gettext_noop('Australian English')),\n    ('en-gb', gettext_noop('British\
+    \ English')),\n    ('eo', gettext_noop('Esperanto')),\n    ('es', gettext_noop('Spanish')),\n\
+    \    ('es-ar', gettext_noop('Argentinian Spanish')),\n    ('es-co', gettext_noop('Colombian\
+    \ Spanish')),\n    ('es-mx', gettext_noop('Mexican Spanish')),\n    ('es-ni',\
+    \ gettext_noop('Nicaraguan Spanish')),\n    ('es-ve', gettext_noop('Venezuelan\
+    \ Spanish')),\n    ('et', gettext_noop('Estonian')),\n    ('eu', gettext_noop('Basque')),\n\
+    \    ('fa', gettext_noop('Persian')),\n    ('fi', gettext_noop('Finnish')),\n\
+    \    ('fr', gettext_noop('French')),\n    ('fy', gettext_noop('Frisian')),\n \
+    \   ('ga', gettext_noop('Irish')),\n    ('gd', gettext_noop('Scottish Gaelic')),\n\
+    \    ('gl', gettext_noop('Galician')),\n    ('he', gettext_noop('Hebrew')),\n\
+    \    ('hi', gettext_noop('Hindi')),\n    ('hr', gettext_noop('Croatian')),\n \
+    \   ('hsb', gettext_noop('Upper Sorbian')),\n    ('hu', gettext_noop('Hungarian')),\n\
+    \    ('ia', gettext_noop('Interlingua')),\n    ('id', gettext_noop('Indonesian')),\n\
+    \    ('io', gettext_noop('Ido')),\n    ('is', gettext_noop('Icelandic')),\n  \
+    \  ('it', gettext_noop('Italian')),\n    ('ja', gettext_noop('Japanese')),\n \
+    \   ('ka', gettext_noop('Georgian')),\n    ('kk', gettext_noop('Kazakh')),\n \
+    \   ('km', gettext_noop('Khmer')),\n    ('kn', gettext_noop('Kannada')),\n   \
+    \ ('ko', gettext_noop('Korean')),\n    ('lb', gettext_noop('Luxembourgish')),\n\
+    \    ('lt', gettext_noop('Lithuanian')),\n    ('lv', gettext_noop('Latvian')),\n\
+    \    ('mk', gettext_noop('Macedonian')),\n    ('ml', gettext_noop('Malayalam')),\n\
+    \    ('mn', gettext_noop('Mongolian')),\n    ('mr', gettext_noop('Marathi')),\n\
+    \    ('my', gettext_noop('Burmese')),\n    ('nb', gettext_noop('Norwegian Bokm\xE5\
+    l')),\n    ('ne', gettext_noop('Nepali')),\n    ('nl', gettext_noop('Dutch')),\n\
+    \    ('nn', gettext_noop('Norwegian Nynorsk')),\n    ('os', gettext_noop('Ossetic')),\n\
+    \    ('pa', gettext_noop('Punjabi')),\n    ('pl', gettext_noop('Polish')),\n \
+    \   ('pt', gettext_noop('Portuguese')),\n    ('pt-br', gettext_noop('Brazilian\
+    \ Portuguese')),\n    ('ro', gettext_noop('Romanian')),\n    ('ru', gettext_noop('Russian')),\n\
+    \    ('sk', gettext_noop('Slovak')),\n    ('sl', gettext_noop('Slovenian')),\n\
+    \    ('sq', gettext_noop('Albanian')),\n    ('sr', gettext_noop('Serbian')),\n\
+    \    ('sr-latn', gettext_noop('Serbian Latin')),\n    ('sv', gettext_noop('Swedish')),\n\
+    \    ('sw', gettext_noop('Swahili')),\n    ('ta', gettext_noop('Tamil')),\n  \
+    \  ('te', gettext_noop('Telugu')),\n    ('th', gettext_noop('Thai')),\n    ('tr',\
+    \ gettext_noop('Turkish')),\n    ('tt', gettext_noop('Tatar')),\n    ('udm', gettext_noop('Udmurt')),\n\
+    \    ('uk', gettext_noop('Ukrainian')),\n    ('ur', gettext_noop('Urdu')),\n \
+    \   ('vi', gettext_noop('Vietnamese')),\n    ('zh-hans', gettext_noop('Simplified\
+    \ Chinese')),\n    ('zh-hant', gettext_noop('Traditional Chinese')),\n]\n$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slanguages_bidi
+  raw: LANGUAGES_BIDI = ["he", "ar", "fa", "ur", $VAR1$] $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slocale_paths
+  raw: LOCALE_PATHS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '[]'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slogfilter
+  raw: "'$VAR1$': {\n    '$VAR2$': '$VAR3$',\n},$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: name
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ()
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slogfiltercallback
+  raw: "'$VAR1$': {\n    '()': 'django.utils.log.CallbackFilter',\n},$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: filter_by_callback
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slogfilterdebugfalse
+  raw: "'$VAR1$': {\n    '()': 'django.utils.log.RequireDebugFalse',\n},$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: require_debug_false
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slogfilterdebugtrue
+  raw: "'$VAR1$': {\n    '()': 'django.utils.log.RequireDebugTrue',\n},$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: require_debug_true
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slogformatter
+  raw: "'$VAR1$': {\n    '()': '$VAR2$',\n    'format': '$VAR3$',\n}$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: name
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ClassName
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slogformatterserver
+  raw: "'$VAR1$': {\n    '()': 'django.utils.log.ServerFormatter',\n    'format':\
+    \ '$VAR2$',\n}$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: django.server
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: '[%(server_time)s] %(message)s'
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slogger
+  raw: "'$VAR1$': {\n    'handlers': ['$VAR2$'],\n    'level': '$VAR3$',\n    'propagate':\
+    \ $VAR4$,\n}$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: django
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: INFO
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: 'True'
+    expression: ''
+    name: VAR4
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slogging
+  raw: "LOGGING = {\n    'version': 1,\n    'disable_existing_loggers': False,\n \
+    \   'formatters': {\n        $VAR1$\n    },\n    'filters': {\n        $VAR2$\n\
+    \    },\n    'handlers': {\n        $VAR3$\n    },\n    'loggers': {\n       \
+    \ $VAR4$\n    }\n}\n$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '# hint: slogformatter, slogformatterserver,'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: '# slogfilter, slogfilterdebugtrue, slogfilterdebugfalse, slogfiltercallback'
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: '# sloghandler, sloghandlerstream, sloghandleremail'
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: '# slogger'
+    expression: ''
+    name: VAR4
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slogging_config
+  raw: LOGGING_CONFIG = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: logging.config.dictConfig
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sloghandler
+  raw: "'$VAR1$': {\n    'level': '$VAR2$',\n    'filters': ['$VAR3$'],\n    'class':\
+    \ '$VAR4$',\n},$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: name
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: INFO
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR4
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sloghandleremail
+  raw: "'$VAR1$': {\n    'level': '$VAR2$',\n    'filters': ['$VAR3$'],\n    'class':\
+    \ 'django.utils.log.AdminEmailHandler'\n},$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: mail_admins
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ERROR
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sloghandlerstream
+  raw: "'$VAR1$': {\n    'level': '$VAR2$',\n    'filters': ['$VAR3$'],\n    'class':\
+    \ 'logging.StreamHandler',\n},$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: console
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: INFO
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slogin_redirect_url
+  raw: LOGIN_REDIRECT_URL = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: /accounts/profile/
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slogin_url
+  raw: LOGIN_URL = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: /accounts/login/
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: slogout_redirect_url
+  raw: LOGOUT_REDIRECT_URL = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: smanagers
+  raw: MANAGERS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ADMINS
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: smedia_root
+  raw: MEDIA_ROOT = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: smedia_url
+  raw: MEDIA_URL = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: /media/
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: smessage_level
+  raw: MESSAGE_LEVEL = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: messages.INFO
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: smessage_storage
+  raw: MESSAGE_STORAGE = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: django.contrib.messages.storage.fallback.FallbackStorage
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: smessage_tags
+  raw: "MESSAGE_TAGS = {\n    messages.DEBUG: '$VAR1$',\n    messages.INFO: '$VAR2$',\n\
+    \    messages.SUCCESS: '$VAR3$',\n    messages.WARNING: '$VAR4$',\n    messages.ERROR:\
+    \ '$VAR5$',\n}\n$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: debug
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: info
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: success
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: warning
+    expression: ''
+    name: VAR4
+  - alwaysStopAt: true
+    defaultValue: error
+    expression: ''
+    name: VAR5
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: smiddleware
+  raw: "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n   \
+    \ 'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n\
+    \    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n\
+    \    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n\
+    ]\n$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: smiddleware_classes
+  raw: "MIDDLEWARE_CLASSES = [\n    'django.middleware.common.CommonMiddleware',\n\
+    \    'django.middleware.csrf.CsrfViewMiddleware',\n    '$VAR1$'\n]\n$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: smigration_modules
+  raw: MIGRATION_MODULES = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '{}'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: smonth_day_format
+  raw: MONTH_DAY_FORMAT = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: F j
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: snumber_grouping
+  raw: NUMBER_GROUPING = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '0'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: spassword_hashers
+  raw: "PASSWORD_HASHERS = [\n    'django.contrib.auth.hashers.PBKDF2PasswordHasher',\n\
+    \    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',\n    'django.contrib.auth.hashers.Argon2PasswordHasher',\n\
+    \    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',\n    'django.contrib.auth.hashers.BCryptPasswordHasher',\n\
+    \    '$VAR1$'\n]\n$END$\n"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: spassword_reset_timeout_days
+  raw: PASSWORD_RESET_TIMEOUT_DAYS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '3'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sprepend_www
+  raw: PREPEND_WWW = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sroot_urlconf
+  raw: ROOT_URLCONF = '$VAR1$'
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssecret_key
+  raw: SECRET_KEY = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssecure_browser_xss_filter
+  raw: SECURE_BROWSER_XSS_FILTER = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssecure_content_type_nosniff
+  raw: SECURE_CONTENT_TYPE_NOSNIFF = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssecure_hsts_include_subdomains
+  raw: SECURE_HSTS_INCLUDE_SUBDOMAINS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssecure_hsts_seconds
+  raw: SECURE_HSTS_SECONDS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '0'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssecure_proxy_ssl_header
+  raw: SECURE_PROXY_SSL_HEADER = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssecure_redirect_exempt
+  raw: SECURE_REDIRECT_EXEMPT = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '[]'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssecure_ssl_host
+  raw: SECURE_SSL_HOST = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssecure_ssl_redirect
+  raw: SECURE_SSL_REDIRECT = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sserialization_modules
+  raw: SERIALIZATION_MODULES = {'$VAR1$' '$VAR2$'}
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: name
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: path.to.serializer
+    expression: ''
+    name: VAR2
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sserver_email
+  raw: SERVER_EMAIL = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: root@localhost
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssession_cache_alias
+  raw: SESSION_CACHE_ALIAS = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: default
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssession_cookie_age
+  raw: SESSION_COOKIE_AGE = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 60 * 60 * 24 * 7 * 2
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssession_cookie_domain
+  raw: SESSION_COOKIE_DOMAIN = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssession_cookie_httponly
+  raw: SESSION_COOKIE_HTTPONLY = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'True'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssession_cookie_name
+  raw: SESSION_COOKIE_NAME = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: sessionid
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssession_cookie_path
+  raw: SESSION_COOKIE_PATH = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: /
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssession_cookie_secure
+  raw: SESSION_COOKIE_SECURE = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssession_engine
+  raw: SESSION_ENGINE = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: django.contrib.sessions.backends.db
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssession_expire_at_browser_close
+  raw: SESSION_EXPIRE_AT_BROWSER_CLOSE = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssession_file_path
+  raw: SESSION_FILE_PATH = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssession_save_every_request
+  raw: SESSION_SAVE_EVERY_REQUEST = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssession_serializer
+  raw: SESSION_SERIALIZER = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: django.contrib.sessions.serializers.JSONSerializer
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sshort_date_format
+  raw: SHORT_DATE_FORMAT = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: m/d/Y
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sshort_datetime_format
+  raw: SHORT_DATETIME_FORMAT = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: m/d/Y P
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssigning_backend
+  raw: SIGNING_BACKEND = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: django.core.signing.TimestampSigner
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssilenced_system_checks
+  raw: SILENCED_SYSTEM_CHECKS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '[]'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: ssite_id
+  raw: SITE_ID = $VAR1$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sstatic_files_finders
+  raw: "STATICFILES_FINDERS = [\n    'django.contrib.staticfiles.finders.FileSystemFinder',\n\
+    \    'django.contrib.staticfiles.finders.AppDirectoriesFinder',\n    $VAR1$\n\
+    ]\n$END$\n"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sstatic_root
+  raw: STATIC_ROOT = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sstatic_url
+  raw: STATIC_URL = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: /static/
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sstaticfiles_dirs
+  raw: STATICFILES_DIRS = [$VAR1$] $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sstaticfiles_storage
+  raw: STATICFILES_STORAGE = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: django.contrib.staticfiles.storage.StaticFilesStorage
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: stemplates
+  raw: "TEMPLATES = [\n    {\n        'BACKEND': '$VAR1$',\n        'APP_DIRS': $VAR2$,\n\
+    \        'DIRS': [\n            $VAR3$\n        ],\n        'OPTIONS': {$VAR4$},\n\
+    \    },\n]\n$END$\n\n"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: django.template.backends.django.DjangoTemplates
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: 'True'
+    expression: ''
+    name: VAR2
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR3
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR4
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: stest_non_serialized_apps
+  raw: TEST_NON_SERIALIZED_APPS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: '[]'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: stest_runner
+  raw: TEST_RUNNER = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: django.test.runner.DiscoverRunner
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sthousand_separator
+  raw: THOUSAND_SEPARATOR = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ','
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: stime_format
+  raw: TIME_FORMAT = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: P
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: stime_input_formats
+  raw: "TIME_INPUT_FORMATS = [\n    '%H:%M:%S',\n    '%H:%M:%S.%f',\n    '%H:%M',\n\
+    \    '$VAR1$'\n]\n$END$"
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: stime_zone
+  raw: TIME_ZONE = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: America/Chicago
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: suse_etags
+  raw: USE_ETAGS = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: suse_i18n
+  raw: USE_I18N = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'True'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: suse_l10n
+  raw: USE_L10N = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: suse_thousand_separator
+  raw: USE_THOUSAND_SEPARATOR = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: suse_tz
+  raw: USE_TZ = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: suse_x_forwarded_host
+  raw: USE_X_FORWARDED_HOST = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: suse_x_forwarded_port
+  raw: USE_X_FORWARDED_PORT = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: 'False'
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: swsgi_application
+  raw: WSGI_APPLICATION = $VAR1$ $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: None
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: sx_frame_options
+  raw: X_FRAME_OPTIONS = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: SAMEORIGIN
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
+- context:
+  - name: Python
+    value: true
+  description: ''
+  name: syear_month_format
+  raw: YEAR_MONTH_FORMAT = '$VAR1$' $END$
+  shortcut: TAB
+  toReformat: true
+  toShortenFQNames: true
+  variables:
+  - alwaysStopAt: true
+    defaultValue: F Y
+    expression: ''
+    name: VAR1
+  - alwaysStopAt: true
+    defaultValue: ''
+    expression: ''
+    name: END
