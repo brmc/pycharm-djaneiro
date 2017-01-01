@@ -11,13 +11,12 @@
       when building Django applications (with a couple generic python uses) specifically
     useful for models, forms, widgets, views, and templates.
 
-    <p>For example, assuming '-->' means 'expands to', the following expansions
-    for models and forms can be made:
+    <p>For example, the following expansions for models and forms can be made:
     </p>
 
     <pre><code>
-    mchar --> $FIELDNAME$ = models.CharField($name$ , max_length=50)$END$
-    fchar --> $FIELDNAME$ = forms.CharField($ARGS$)$END$
+    mchar&lt;TAB--> $FIELDNAME$ = models.CharField($name$ , max_length=50)$END$
+    fchar&lt;TAB--> $FIELDNAME$ = forms.CharField($ARGS$)$END$
     </code></pre>
 
     <p>Where each variable between dollar signs($) (e.g., $FIELDNAME$, $NAME$, etc)
@@ -36,16 +35,10 @@
 
     </p>
 
-    <p> Examples of other types of templates for other contexts are:
-    <pre><code>
-    ifelse --> {% if %} $START$ {% else %} $STOP$ {% endif %} $END$
-    Model --> (this generates a skeleton for a simple model class)
-    npdb --> from nose.tools import set_trace; set_trace()
-    </code></pre>
-
     <p>
     For a full listing of the abbreviations, see the github repo:
-    <a href=''></a>
+    <a href='https://github.com/brmc/pycharm-djaneiro/tree/master/docs'>
+    https://github.com/brmc/pycharm-djaneiro/tree/master/docs</a>
     </p>
 
     ]]></description>
