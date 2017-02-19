@@ -1,5 +1,0 @@
-'$:name$': {
-    'level': '$:INFO$',
-    'filters': ['$:$'],
-    'class': '$$',
-},$END$

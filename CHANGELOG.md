@@ -13,8 +13,8 @@
 * Included missing fields for models and forms
 * Added Postgres model and form fields
 * Added Widgets
-* Added transpiler to convert between sublime text and jetbrains
-* Created yml format to write live templates
+* ~~Added transpiler to convert between sublime text and jetbrains~~
+* ~~Created yml format to write live templates~~
 
 Minor changes:
 

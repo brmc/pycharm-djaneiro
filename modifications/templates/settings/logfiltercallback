@@ -1,3 +1,0 @@
-'$:filter_by_callback$': {
-    '()': 'django.utils.log.CallbackFilter',
-},$END$

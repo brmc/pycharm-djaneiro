@@ -1,3 +1,0 @@
-'$:require_debug_false$': {
-    '()': 'django.utils.log.RequireDebugFalse',
-},$END$
