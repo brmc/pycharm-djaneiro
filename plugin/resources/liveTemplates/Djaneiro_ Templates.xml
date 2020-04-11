@@ -1,25 +1,25 @@
 <templateSet group="Djaneiro: Templates">
-  <template name="autoescape" value="&#10;{% autoescape $VAR1$ %}&#10;&#9;$VAR2$}&#10;{% endautoescape %}&#10; $END$" description="Django" toReformat="true" toShortenFQNames="true">
+  <template name="autoescape" value="&#10;{% autoescape $VAR1$ %}&#10;&#9;$VAR2$&#10;{% endautoescape %}&#10; $END$" description="Django" toReformat="true" toShortenFQNames="true">
     <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <variable name="VAR1" expression="" defaultValue="&quot;off&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="block" value="&#10;{% block $VAR1$ %}&#10;&#9;$VAR2$}&#10;{% endblock $VAR1$ %}&#10;&#9;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+  <template name="block" value="&#10;{% block $VAR1$ %}&#10;&#9;$VAR2$&#10;{% endblock $VAR1$ %}&#10;&#9;$END$" description="Django" toReformat="true" toShortenFQNames="true">
     <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <variable name="VAR1" expression="" defaultValue="&quot;blockname&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="blocktrans" value="&#10;{% blocktrans %}&#10;    $VAR1$}&#10;{% endblocktrans %}&#10; $END$" description="Django" toReformat="true" toShortenFQNames="true">
+  <template name="blocktrans" value="&#10;{% blocktrans %}&#10;    $VAR1$&#10;{% endblocktrans %}&#10; $END$" description="Django" toReformat="true" toShortenFQNames="true">
     <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="comment" value="&#10;{% comment %}&#10;&#9;$VAR1$}&#10;{% endcomment %}&#10;&#9;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+  <template name="comment" value="&#10;{% comment %}&#10;&#9;$VAR1$&#10;{% endcomment %}&#10;&#9;$END$" description="Django" toReformat="true" toShortenFQNames="true">
     <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
@@ -82,7 +82,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="for" value="&#10;{% for $VAR1$ in $VAR2$%}&#10;&#9;$VAR3$&#10;{% endfor %}&#10;&#9;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+  <template name="for" value="&#10;{% for $VAR1$ in $VAR2$ %}&#10;&#9;$VAR3$&#10;{% endfor %}&#10;&#9;$END$" description="Django" toReformat="true" toShortenFQNames="true">
     <variable name="VAR3" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <variable name="VAR2" expression="" defaultValue="&quot; &quot;" alwaysStopAt="true" />
     <variable name="VAR1" expression="" defaultValue="&quot; in &quot;" alwaysStopAt="true" />
@@ -136,7 +136,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="ifnotequal" value="&#10;{% ifnotequal $VAR1$$VAR2$%}&#10;&#9;$VAR3$}&#10;{% endifnotequal %}&#10;&#9;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+  <template name="ifnotequal" value="&#10;{% ifnotequal $VAR1$ $VAR2$ %}&#10;&#9;$VAR3$}&#10;{% endifnotequal %}&#10;&#9;$END$" description="Django" toReformat="true" toShortenFQNames="true">
     <variable name="VAR3" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <variable name="VAR2" expression="" defaultValue="&quot; &quot;" alwaysStopAt="true" />
     <variable name="VAR1" expression="" defaultValue="&quot; &quot;" alwaysStopAt="true" />
