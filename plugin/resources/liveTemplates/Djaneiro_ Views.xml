@@ -45,7 +45,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="stackedinline" value="&#10;class $VAR1$Inline(admin.StackedInline):&#10;        '''&#10;            Stacked Inline View for $VAR1$&#10;        '''&#10;      model = $VAR2$$VAR1$}&#10;      min_num = $VAR3$&#10;      max_num = $VAR4$&#10;      extra = $VAR5$&#10;      raw_id_fields = ($VAR6$,)&#10;&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+  <template name="stackedinline" value="&#10;class $VAR1$Inline(admin.StackedInline):&#10;        '''&#10;            Stacked Inline View for $VAR1$&#10;        '''&#10;      model = $VAR2$$VAR1$&#10;      min_num = $VAR3$&#10;      max_num = $VAR4$&#10;      extra = $VAR5$&#10;      raw_id_fields = ($VAR6$,)&#10;&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
     <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <variable name="VAR5" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
     <variable name="VAR3" expression="" defaultValue="&quot;3&quot;" alwaysStopAt="true" />
@@ -56,7 +56,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="tabularinline" value="&#10;class $VAR1$Inline(admin.TabularInline):&#10;        '''&#10;            Tabular Inline View for $VAR1$&#10;        '''&#10;      model = $VAR2$$VAR1$}&#10;      min_num = $VAR3$&#10;      max_num = $VAR4$&#10;      extra = $VAR5$&#10;      raw_id_fields = ($VAR6$,)&#10;&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+  <template name="tabularinline" value="&#10;class $VAR1$Inline(admin.TabularInline):&#10;        '''&#10;            Tabular Inline View for $VAR1$&#10;        '''&#10;      model = $VAR2$$VAR1$&#10;      min_num = $VAR3$&#10;      max_num = $VAR4$&#10;      extra = $VAR5$&#10;      raw_id_fields = ($VAR6$,)&#10;&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
     <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <variable name="VAR5" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
     <variable name="VAR3" expression="" defaultValue="&quot;3&quot;" alwaysStopAt="true" />
