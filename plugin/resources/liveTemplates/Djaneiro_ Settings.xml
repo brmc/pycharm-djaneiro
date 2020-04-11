@@ -14,9 +14,8 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="sallowed_hosts" value="ALLOWED_HOSTS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+  <template name="sallowed_hosts" value="ALLOWED_HOSTS = [$VAR1$] $END$" description="Django" toReformat="true" toShortenFQNames="true">
     <variable name="VAR1" expression="" defaultValue="&quot;[]&quot;" alwaysStopAt="true" />
-    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
@@ -80,7 +79,6 @@
     <variable name="VAR7" expression="" defaultValue="&quot;300&quot;" alwaysStopAt="true" />
     <variable name="VAR8" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
     <variable name="VAR9" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
-    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
@@ -209,7 +207,6 @@
     <variable name="VAR17" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <variable name="VAR18" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
     <variable name="VAR19" expression="" defaultValue="&quot;True&quot;" alwaysStopAt="true" />
-    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
