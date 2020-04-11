@@ -1,0 +1,33 @@
+<templateSet group="Djaneiro: Python">
+  <template name="__init__" value="&#10;def __init__(self, *args, **kwargs):&#10;    super($VAR1$, self).__init__(*args, **kwargs)&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;CLASS_NAME&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ipdb" value="import ipdb; ipdb.set_trace()$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="npdb" value="from nose.tools import set_trace; set_trace()$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="pdb" value="import pdb; pdb.set_trace()" description="Django" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="traceback" value="import traceback; traceback.print_exc();$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="utfc" value="# -*- coding: utf-8 -*-$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>

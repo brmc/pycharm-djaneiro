@@ -1,190 +1,190 @@
 <templateSet group="Djaneiro: Completions">
-  <template name="choices" value="choices='$VAR$'$END$" toReformat="false" toShortenFQNames="true">
+  <template name="choices" value="choices='$VAR$'$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="END" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="db_column" value="db_column='$VAR$'$END$" toReformat="false" toShortenFQNames="true">
+  <template name="db_column" value="db_column='$VAR$'$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="END" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="db_tablespace" value="db_tablespace='$VAR$'$END$" toReformat="false" toShortenFQNames="true">
+  <template name="db_tablespace" value="db_tablespace='$VAR$'$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="END" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="related_name" value="related_name='$VAR$'$END$" toReformat="false" toShortenFQNames="true">
+  <template name="related_name" value="related_name='$VAR$'$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="END" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="error_message" value="error_message='$VAR$'$END$" toReformat="false" toShortenFQNames="true">
+  <template name="error_message" value="error_message='$VAR$'$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="END" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="unique_for_date" value="unique_for_date='$VAR$'$END$" toReformat="false" toShortenFQNames="true">
+  <template name="unique_for_date" value="unique_for_date='$VAR$'$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="END" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="unique_for_month" value="unique_for_month='$VAR$'$END$" toReformat="false" toShortenFQNames="true">
+  <template name="unique_for_month" value="unique_for_month='$VAR$'$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="END" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="unique_for_year" value="unique_for_year='$VAR$'$END$" toReformat="false" toShortenFQNames="true">
+  <template name="unique_for_year" value="unique_for_year='$VAR$'$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="END" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="verbose_name" value="verbose_name='$VAR$'$END$" toReformat="false" toShortenFQNames="true">
+  <template name="verbose_name" value="verbose_name='$VAR$'$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="END" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="validators" value="[]" toReformat="false" toShortenFQNames="true">
+  <template name="validators" value="[]" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="label" value="label='$VAR$'$END$" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="END" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
-  <template name="initial" value="initial='$VAR$'$END$" toReformat="false" toShortenFQNames="true">
+  <template name="label" value="label='$VAR$'$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="END" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="null" value="null=True$END$" toReformat="false" toShortenFQNames="true">
+  <template name="initial" value="initial='$VAR$'$END$" description="Django" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="null" value="null=True$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="blank" value="blank=True$END$" toReformat="false" toShortenFQNames="true">
+  <template name="blank" value="blank=True$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="db_index" value="db_index=True$END$" toReformat="false" toShortenFQNames="true">
+  <template name="db_index" value="db_index=True$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="default" value="default=True$END$" toReformat="false" toShortenFQNames="true">
+  <template name="default" value="default=True$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="editable" value="editable=False$END$" toReformat="false" toShortenFQNames="true">
+  <template name="editable" value="editable=False$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="help_message" value="help_message$END$" toReformat="false" toShortenFQNames="true">
+  <template name="help_message" value="help_message$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="primary_key" value="primary_key=True$END$" toReformat="false" toShortenFQNames="true">
+  <template name="primary_key" value="primary_key=True$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="unique" value="unique=True$END$" toReformat="false" toShortenFQNames="true">
+  <template name="unique" value="unique=True$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="unique_together" value="unique_together$END$" toReformat="false" toShortenFQNames="true">
+  <template name="unique_together" value="unique_together$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="verbose_name_plural" value="verbose_name_plural$END$" toReformat="false" toShortenFQNames="true">
+  <template name="verbose_name_plural" value="verbose_name_plural$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="auto_now_add" value="auto_now_add=True$END$" toReformat="false" toShortenFQNames="true">
+  <template name="auto_now_add" value="auto_now_add=True$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="auto_now" value="auto_now$END$" toReformat="false" toShortenFQNames="true">
+  <template name="auto_now" value="auto_now$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="required" value="required=True$END$" toReformat="false" toShortenFQNames="true">
+  <template name="required" value="required=True$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="widget" value="widget=$VAR$$END$" toReformat="false" toShortenFQNames="true">
+  <template name="widget" value="widget=$VAR$$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="localized" value="localized=$VAR$$END$" toReformat="false" toShortenFQNames="true">
+  <template name="localized" value="localized=$VAR$$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="RequestContext" value="RequestContext$END$" toReformat="false" toShortenFQNames="true">
+  <template name="RequestContext" value="RequestContext$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="render_to_response" value="render_to_response$END$" toReformat="false" toShortenFQNames="true">
+  <template name="render_to_response" value="render_to_response$END$" description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="redirect" value="LOGIN_REDIRECT_URL = '/accounts/profile/'$END$  " toReformat="false" toShortenFQNames="true">
+  <template name="redirect" value="LOGIN_REDIRECT_URL = '/accounts/profile/'$END$  " description="Django" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />

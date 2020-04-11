@@ -1,0 +1,89 @@
+<templateSet group="Djaneiro: Views">
+  <template name="context" value="&#10;context={$VAR$}$END$" description="Django Context dict" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="view" value="def $VAR1$(request):$END$" description="Django VIEW" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;VIEWNAME&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="createview" value="&#10;class $VAR1$CreateView(CreateView):&#10;    model = $VAR1$&#10;    template_name = &quot;$VAR2$&quot;&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="&quot;TEMPLATE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;MODEL_NAME&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="deleteview" value="&#10;class $VAR1$DeleteView(DeleteView):&#10;    model = $VAR1$&#10;    template_name = &quot;$VAR2$&quot;&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="&quot;TEMPLATE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;MODEL_NAME&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="detailview" value="&#10;class $VAR1$DetailView(DetailView):&#10;    model = $VAR1$&#10;    template_name = &quot;$VAR2$&quot;&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="&quot;TEMPLATE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;MODEL_NAME&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="dispatch" value="&#10;def dispatch(self, request, *args, **kwargs):&#10;    return super($VAR1$, self).dispatch(request, *args, **kwargs)&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;CLASS_NAME&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="listview" value="&#10;class $VAR1$ListView(ListView):&#10;    model = $VAR1$&#10;    template_name = &quot;$VAR2$&quot;&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="&quot;TEMPLATE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;MODEL_NAME&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="stackedinline" value="&#10;class $VAR1$Inline(admin.StackedInline):&#10;        '''&#10;            Stacked Inline View for $VAR1$&#10;        '''&#10;      model = $VAR2$$VAR1$}&#10;      min_num = $VAR3$&#10;      max_num = $VAR4$&#10;      extra = $VAR5$&#10;      raw_id_fields = ($VAR6$,)&#10;&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR5" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;3&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;20&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR6" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="tabularinline" value="&#10;class $VAR1$Inline(admin.TabularInline):&#10;        '''&#10;            Tabular Inline View for $VAR1$&#10;        '''&#10;      model = $VAR2$$VAR1$}&#10;      min_num = $VAR3$&#10;      max_num = $VAR4$&#10;      extra = $VAR5$&#10;      raw_id_fields = ($VAR6$,)&#10;&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR5" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;3&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;20&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR6" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="templateview" value="&#10;class $VAR1$(TemplateView):&#10;    template_name = &quot;$VAR2$&quot;&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="&quot;TEMPLATE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;CLASS_NAME&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="updateview" value="&#10;class $VAR1$UpdateView(UpdateView):&#10;    model = $VAR1$&#10;    template_name = &quot;$VAR2$&quot;&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="&quot;TEMPLATE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;MODEL_NAME&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="isettings" value="from django.conf import settings" description="Django import settings" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>

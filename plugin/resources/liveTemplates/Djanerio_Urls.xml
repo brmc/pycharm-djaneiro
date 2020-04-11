@@ -1,0 +1,22 @@
+<templateSet group="Djanerio:Urls">
+  <template name="path" value="path('$VAR1$/', $VAR2$, name='$VAR3$'),$END$" description="Django URL route path" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="route" defaultValue="route" alwaysStopAt="true" />
+    <variable name="VAR2" expression="views.view" defaultValue="views.view" alwaysStopAt="true" />
+    <variable name="VAR3" expression="view" defaultValue="view" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="urlpatterns" value="urlpatterns = [&#10;    $VAR$&#10;]$END$" description="Django URLPATTERNS list" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="djurls" value="from django.urls import path&#10;&#10;urlpatterns = [&#10;    $VAR$&#10;]$END$" description="Django URLS.PY template" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>

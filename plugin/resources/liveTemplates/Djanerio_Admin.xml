@@ -1,0 +1,20 @@
+<templateSet group="Djanerio:Admin">
+  <template name="adminview" value="&#10;class $VAR1$Admin(admin.ModelAdmin):&#10;    '''&#10;        Admin View for $VAR1$&#10;    '''&#10;    list_display = ('$VAR2$',)&#10;    list_filter = ('$VAR3$',)&#10;    inlines = [&#10;        $VAR4$Inline,&#10;    ]&#10;    raw_id_fields = ('$VAR5$',)&#10;    readonly_fields = ('$VAR6$',)&#10;    search_fields = ('$VAR7$',)&#10;&#10;admin.site.register($VAR1$, $VAR1$Admin)&#10;$END$" description="Django ModelAdmin" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR5" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR6" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR7" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="register" value="admin.site.register($VAR$)$END$" description="Django adminsite register" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>

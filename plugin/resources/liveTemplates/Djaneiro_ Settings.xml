@@ -1,0 +1,1136 @@
+<templateSet group="Djaneiro: Settings">
+  <template name="sabsolute_url_overrides" value="ABSOLUTE_URL_OVERRIDES = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;{}&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sadmins" value="ADMINS = [('$VAR1$', '$VAR2$'), ]$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;USER&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;EMAIL&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sallowed_hosts" value="ALLOWED_HOSTS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;[]&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sappend_slash" value="APPEND_SLASH = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;True&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sauth_password_validators" value="AUTH_PASSWORD_VALIDATORS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;[]&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sauth_user_model" value="AUTH_USER_MODEL = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;auth.User&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sauthentication_backends" value="AUTHENTICATION_BACKENDS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;['django.contrib.auth.backends.ModelBackend']&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="scache_middleware_alias" value="CACHE_MIDDLEWARE_ALIAS = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;default&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="scache_middleware_key_prefix" value="CACHE_MIDDLEWARE_KEY_PREFIX = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="scache_middleware_seconds" value="CACHE_MIDDLEWARE_SECONDS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;600&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="scaches" value="&#10;CACHES = {&#10;    '$VAR1$': {&#10;        'BACKEND': 'django.core.cache.backends.$VAR2$',&#10;        'KEY_FUNCTION': $VAR3$,&#10;        'KEY_PREFIX': '$VAR4$',&#10;        'LOCATION': '$VAR5$',&#10;        'OPTIONS': $VAR6$,&#10;        'TIMEOUT': $VAR7$,&#10;        'VERSION': $VAR8$&#10;    },&#10;    $VAR9$&#10;}&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;default&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;locmem.LocMemCache&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR5" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR6" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR7" expression="" defaultValue="&quot;300&quot;" alwaysStopAt="true" />
+    <variable name="VAR8" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="VAR9" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="scsrf_cookie_age" value="CSRF_COOKIE_AGE = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;60 * 60 * 24 * 7 * 52&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="scsrf_cookie_domain" value="CSRF_COOKIE_DOMAIN = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="scsrf_cookie_httponly" value="CSRF_COOKIE_HTTPONLY = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="scsrf_cookie_name" value="CSRF_COOKIE_NAME = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;csrftoken&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="scsrf_cookie_path" value="CSRF_COOKIE_PATH = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="scsrf_cookie_secure" value="CSRF_COOKIE_SECURE = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="scsrf_failure_view" value="CSRF_FAILURE_VIEW = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;django.views.csrf.csrf_failure&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="scsrf_header_name" value="CSRF_HEADER_NAME = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;HTTP_X_CSRFTOKEN&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="scsrf_trusted_origins" value="CSRF_TRUSTED_ORIGINS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;[]&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdata_upload_max_memory_size" value="DATA_UPLOAD_MAX_MEMORY_SIZE = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;2621440&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdata_upload_max_number_fields" value="DATA_UPLOAD_MAX_NUMBER_FIELDS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;1000&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdatabase" value="'$DBNAME$': {&#10;    'ENGINE': 'django.db.backends.$VAR2$',&#10;    'NAME': '$VAR3$',&#10;    'USER': '$VAR4$',&#10;    'PASSWORD': '$VAR5$',&#10;    'HOST': '$VAR6$',&#10;    'PORT': '$VAR7$',&#10;    'ATOMIC_REQUESTS': $VAR8$,&#10;    'AUTOCOMMIT': $VAR9$,&#10;    'CONN_MAX_AGE': $VAR10$,&#10;    'OPTIONS': $VAR11$,&#10;    'TIME_ZONE': $VAR12$,&#10;    'TEST': {&#10;        'NAME': 'test_$DBNAME$',&#10;        'CHARSET': $VAR14$,&#10;        'COLLATION': $VAR15$,&#10;        'DEPENDENCIES': ['$DBNAME$', $VAR17$],&#10;        'MIRROR': $VAR18$,&#10;        'SERIALIZE': $VAR19$,&#10;    },&#10;}" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="DBNAME" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;postgresql&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;mydatabase&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;mydatabaseuser&quot;" alwaysStopAt="true" />
+    <variable name="VAR5" expression="" defaultValue="&quot;mypassword&quot;" alwaysStopAt="true" />
+    <variable name="VAR6" expression="" defaultValue="&quot;127.0.0.1&quot;" alwaysStopAt="true" />
+    <variable name="VAR7" expression="" defaultValue="&quot;5432&quot;" alwaysStopAt="true" />
+    <variable name="VAR8" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="VAR9" expression="" defaultValue="&quot;True&quot;" alwaysStopAt="true" />
+    <variable name="VAR10" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="VAR11" expression="" defaultValue="&quot;{}&quot;" alwaysStopAt="true" />
+    <variable name="VAR12" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR14" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR15" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR17" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR18" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR19" expression="" defaultValue="&quot;True&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdatabase_routers" value="DATABASE_ROUTERS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;[]&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdatabases" value="DATABASES = {&#10;    '$DBNAME$': {&#10;        'ENGINE': 'django.db.backends.$VAR2$',&#10;        'NAME': '$VAR3$',&#10;        'USER': '$VAR4$',&#10;        'PASSWORD': '$VAR5$',&#10;        'HOST': '$VAR6$',&#10;        'PORT': '$VAR7$',&#10;        'ATOMIC_REQUESTS': $VAR8$,&#10;        'AUTOCOMMIT': $VAR9$,&#10;        'CONN_MAX_AGE': $VAR10$,&#10;        'OPTIONS': $VAR11$,&#10;        'TIME_ZONE': $VAR12$,&#10;        'TEST': {&#10;            'NAME': 'test_$DBNAME$',&#10;            'CHARSET': $VAR14$,&#10;            'COLLATION': $VAR15$,&#10;            'DEPENDENCIES': ['$DBNAME$', $VAR17$],&#10;            'MIRROR': $VAR18$,&#10;            'SERIALIZE': $VAR19$,&#10;        },&#10;    }&#10;}&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="DBNAME" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;postgresql&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;mydatabase&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;mydatabaseuser&quot;" alwaysStopAt="true" />
+    <variable name="VAR5" expression="" defaultValue="&quot;mypassword&quot;" alwaysStopAt="true" />
+    <variable name="VAR6" expression="" defaultValue="&quot;127.0.0.1&quot;" alwaysStopAt="true" />
+    <variable name="VAR7" expression="" defaultValue="&quot;5432&quot;" alwaysStopAt="true" />
+    <variable name="VAR8" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="VAR9" expression="" defaultValue="&quot;True&quot;" alwaysStopAt="true" />
+    <variable name="VAR10" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="VAR11" expression="" defaultValue="&quot;{}&quot;" alwaysStopAt="true" />
+    <variable name="VAR12" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR14" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR15" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR17" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR18" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR19" expression="" defaultValue="&quot;True&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdatabasetest" value="'TEST': {&#10;    'NAME': $VAR1$,&#10;    'CHARSET': $VAR2$,&#10;    'COLLATION': $VAR3$,&#10;    'DEPENDENCIES': [$VAR4$],&#10;    'MIRROR': $VAR5$,&#10;    'SERIALIZE': $VAR6$,&#10;}" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR5" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR6" expression="" defaultValue="&quot;True&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdate_format" value="DATE_FORMAT = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;N j, Y&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdate_input_formats" value="DATE_INPUT_FORMATS = [&#10;    '%Y-%m-%d', '%m/%d/%Y', '%m/%d/%y',&#10;    '%b %d %Y', '%b %d, %Y',&#10;    '%d %b %Y', '%d %b, %Y',&#10;    '%B %d %Y', '%B %d, %Y',&#10;    '%d %B %Y', '%d %B, %Y',&#10;    '$VAR1$'&#10;]&#10;$end$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdatetime_format" value="DATETIME_FORMAT = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;N j, Y, P&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdatetime_input_formats" value="DATETIME_INPUT_FORMATS = [&#10;    '%Y-%m-%d %H:%M:%S',     # '2006-10-25 14:30:59'&#10;    '%Y-%m-%d %H:%M:%S.%f',  # '2006-10-25 14:30:59.000200'&#10;    '%Y-%m-%d %H:%M',        # '2006-10-25 14:30'&#10;    '%Y-%m-%d',              # '2006-10-25'&#10;    '%m/%d/%Y %H:%M:%S',     # '10/25/2006 14:30:59'&#10;    '%m/%d/%Y %H:%M:%S.%f',  # '10/25/2006 14:30:59.000200'&#10;    '%m/%d/%Y %H:%M',        # '10/25/2006 14:30'&#10;    '%m/%d/%Y',              # '10/25/2006'&#10;    '%m/%d/%y %H:%M:%S',     # '10/25/06 14:30:59'&#10;    '%m/%d/%y %H:%M:%S.%f',  # '10/25/06 14:30:59.000200'&#10;    '%m/%d/%y %H:%M',        # '10/25/06 14:30'&#10;    '%m/%d/%y',              # '10/25/06'&#10;]&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdebug" value="DEBUG = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdebug_propagate_exceptions" value="DEBUG_PROPAGATE_EXCEPTIONS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdecimal_separator" value="DECIMAL_SEPARATOR = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;.&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdefault_charset" value="DEFAULT_CHARSET = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;utf-8&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdefault_content_type" value="DEFAULT_CONTENT_TYPE = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;text/html&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdefault_exception_reporter_filter" value="DEFAULT_EXCEPTION_REPORTER_FILTER = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;django.views.debug.SafeExceptionReporterFilter&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdefault_file_storage" value="DEFAULT_FILE_STORAGE = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;django.core.files.storage.FileSystemStorage&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdefault_from_email" value="DEFAULT_FROM_EMAIL = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;webmaster@localhost&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdefault_index_tablespace" value="DEFAULT_INDEX_TABLESPACE = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdefault_tablespace" value="DEFAULT_TABLESPACE = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sdisallowed_user_agents" value="DISALLOWED_USER_AGENTS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;[]&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="semail_backend" value="EMAIL_BACKEND = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;django.core.mail.backends.smtp.EmailBackend&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="semail_host" value="EMAIL_HOST = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;localhost&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="semail_host_password" value="EMAIL_HOST_PASSWORD = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="semail_host_user" value="EMAIL_HOST_USER = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="semail_port" value="EMAIL_PORT = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;25&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="semail_ssl_certfile" value="EMAIL_SSL_CERTFILE = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="semail_ssl_keyfile" value="EMAIL_SSL_KEYFILE = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="semail_subject_prefix" value="EMAIL_SUBJECT_PREFIX = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;[Django] &quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="semail_timeout" value="EMAIL_TIMEOUT = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="semail_use_ssl" value="EMAIL_USE_SSL = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="semail_use_tls" value="EMAIL_USE_TLS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sfile_charset" value="FILE_CHARSET = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;utf-8&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sfile_upload_directory_permissions" value="FILE_UPLOAD_DIRECTORY_PERMISSIONS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sfile_upload_handlers" value="FILE_UPLOAD_HANDLERS = [&#10;    'django.core.files.uploadhandler.MemoryFileUploadHandler',&#10;    'django.core.files.uploadhandler.TemporaryFileUploadHandler',&#10;]$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sfile_upload_max_memory_size" value="FILE_UPLOAD_MAX_MEMORY_SIZE = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;2621440&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sfile_upload_permissions" value="FILE_UPLOAD_PERMISSIONS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sfile_upload_temp_dir" value="FILE_UPLOAD_TEMP_DIR = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sfirst_day_of_week" value="FIRST_DAY_OF_WEEK = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sfixture_dirs" value="FIXTURE_DIRS = [$VAR1$] $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sforce_script_name" value="FORCE_SCRIPT_NAME = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sformat_module_path" value="FORMAT_MODULE_PATH = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="signorable_404_urls" value="IGNORABLE_404_URLS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;[]&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sinstalled_apps" value="INSTALLED_APPS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;[]&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sinternal_ips" value="INTERNAL_IPS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;[]&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slanguage_code" value="LANGUAGE_CODE = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;en-us&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slanguage_cookie_age" value="LANGUAGE_COOKIE_AGE = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slanguage_cookie_domain" value="LANGUAGE_COOKIE_DOMAIN = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slanguage_cookie_name" value="LANGUAGE_COOKIE_NAME = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;django_language&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slanguage_cookie_path" value="LANGUAGE_COOKIE_PATH = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slanguages" value="LANGUAGES = [&#10;    ('af', gettext_noop('Afrikaans')),&#10;    ('ar', gettext_noop('Arabic')),&#10;    ('ast', gettext_noop('Asturian')),&#10;    ('az', gettext_noop('Azerbaijani')),&#10;    ('bg', gettext_noop('Bulgarian')),&#10;    ('be', gettext_noop('Belarusian')),&#10;    ('bn', gettext_noop('Bengali')),&#10;    ('br', gettext_noop('Breton')),&#10;    ('bs', gettext_noop('Bosnian')),&#10;    ('ca', gettext_noop('Catalan')),&#10;    ('cs', gettext_noop('Czech')),&#10;    ('cy', gettext_noop('Welsh')),&#10;    ('da', gettext_noop('Danish')),&#10;    ('de', gettext_noop('German')),&#10;    ('dsb', gettext_noop('Lower Sorbian')),&#10;    ('el', gettext_noop('Greek')),&#10;    ('en', gettext_noop('English')),&#10;    ('en-au', gettext_noop('Australian English')),&#10;    ('en-gb', gettext_noop('British English')),&#10;    ('eo', gettext_noop('Esperanto')),&#10;    ('es', gettext_noop('Spanish')),&#10;    ('es-ar', gettext_noop('Argentinian Spanish')),&#10;    ('es-co', gettext_noop('Colombian Spanish')),&#10;    ('es-mx', gettext_noop('Mexican Spanish')),&#10;    ('es-ni', gettext_noop('Nicaraguan Spanish')),&#10;    ('es-ve', gettext_noop('Venezuelan Spanish')),&#10;    ('et', gettext_noop('Estonian')),&#10;    ('eu', gettext_noop('Basque')),&#10;    ('fa', gettext_noop('Persian')),&#10;    ('fi', gettext_noop('Finnish')),&#10;    ('fr', gettext_noop('French')),&#10;    ('fy', gettext_noop('Frisian')),&#10;    ('ga', gettext_noop('Irish')),&#10;    ('gd', gettext_noop('Scottish Gaelic')),&#10;    ('gl', gettext_noop('Galician')),&#10;    ('he', gettext_noop('Hebrew')),&#10;    ('hi', gettext_noop('Hindi')),&#10;    ('hr', gettext_noop('Croatian')),&#10;    ('hsb', gettext_noop('Upper Sorbian')),&#10;    ('hu', gettext_noop('Hungarian')),&#10;    ('ia', gettext_noop('Interlingua')),&#10;    ('id', gettext_noop('Indonesian')),&#10;    ('io', gettext_noop('Ido')),&#10;    ('is', gettext_noop('Icelandic')),&#10;    ('it', gettext_noop('Italian')),&#10;    ('ja', gettext_noop('Japanese')),&#10;    ('ka', gettext_noop('Georgian')),&#10;    ('kk', gettext_noop('Kazakh')),&#10;    ('km', gettext_noop('Khmer')),&#10;    ('kn', gettext_noop('Kannada')),&#10;    ('ko', gettext_noop('Korean')),&#10;    ('lb', gettext_noop('Luxembourgish')),&#10;    ('lt', gettext_noop('Lithuanian')),&#10;    ('lv', gettext_noop('Latvian')),&#10;    ('mk', gettext_noop('Macedonian')),&#10;    ('ml', gettext_noop('Malayalam')),&#10;    ('mn', gettext_noop('Mongolian')),&#10;    ('mr', gettext_noop('Marathi')),&#10;    ('my', gettext_noop('Burmese')),&#10;    ('nb', gettext_noop('Norwegian Bokmål')),&#10;    ('ne', gettext_noop('Nepali')),&#10;    ('nl', gettext_noop('Dutch')),&#10;    ('nn', gettext_noop('Norwegian Nynorsk')),&#10;    ('os', gettext_noop('Ossetic')),&#10;    ('pa', gettext_noop('Punjabi')),&#10;    ('pl', gettext_noop('Polish')),&#10;    ('pt', gettext_noop('Portuguese')),&#10;    ('pt-br', gettext_noop('Brazilian Portuguese')),&#10;    ('ro', gettext_noop('Romanian')),&#10;    ('ru', gettext_noop('Russian')),&#10;    ('sk', gettext_noop('Slovak')),&#10;    ('sl', gettext_noop('Slovenian')),&#10;    ('sq', gettext_noop('Albanian')),&#10;    ('sr', gettext_noop('Serbian')),&#10;    ('sr-latn', gettext_noop('Serbian Latin')),&#10;    ('sv', gettext_noop('Swedish')),&#10;    ('sw', gettext_noop('Swahili')),&#10;    ('ta', gettext_noop('Tamil')),&#10;    ('te', gettext_noop('Telugu')),&#10;    ('th', gettext_noop('Thai')),&#10;    ('tr', gettext_noop('Turkish')),&#10;    ('tt', gettext_noop('Tatar')),&#10;    ('udm', gettext_noop('Udmurt')),&#10;    ('uk', gettext_noop('Ukrainian')),&#10;    ('ur', gettext_noop('Urdu')),&#10;    ('vi', gettext_noop('Vietnamese')),&#10;    ('zh-hans', gettext_noop('Simplified Chinese')),&#10;    ('zh-hant', gettext_noop('Traditional Chinese')),&#10;]&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slanguages_bidi" value="LANGUAGES_BIDI = [&quot;he&quot;, &quot;ar&quot;, &quot;fa&quot;, &quot;ur&quot;, $VAR1$] $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slocale_paths" value="LOCALE_PATHS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;[]&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slogfilter" value="'$VAR1$': {&#10;    '$VAR2$': '$VAR3$',&#10;},$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;()&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slogfiltercallback" value="'$VAR1$': {&#10;    '()': 'django.utils.log.CallbackFilter',&#10;},$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;filter_by_callback&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slogfilterdebugfalse" value="'$VAR1$': {&#10;    '()': 'django.utils.log.RequireDebugFalse',&#10;},$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;require_debug_false&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slogfilterdebugtrue" value="'$VAR1$': {&#10;    '()': 'django.utils.log.RequireDebugTrue',&#10;},$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;require_debug_true&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slogformatter" value="'$VAR1$': {&#10;    '()': '$VAR2$',&#10;    'format': '$VAR3$',&#10;}$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;ClassName&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slogformatterserver" value="'$VAR1$': {&#10;    '()': 'django.utils.log.ServerFormatter',&#10;    'format': '$VAR2$',&#10;}$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;django.server&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;[%(server_time)s] %(message)s&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slogger" value="'$VAR1$': {&#10;    'handlers': ['$VAR2$'],&#10;    'level': '$VAR3$',&#10;    'propagate': $VAR4$,&#10;}$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;django&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;INFO&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;True&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slogging" value="LOGGING = {&#10;    'version': 1,&#10;    'disable_existing_loggers': False,&#10;    'formatters': {&#10;        $VAR1$&#10;    },&#10;    'filters': {&#10;        $VAR2$&#10;    },&#10;    'handlers': {&#10;        $VAR3$&#10;    },&#10;    'loggers': {&#10;        $VAR4$&#10;    }&#10;}&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;# hint: slogformatter, slogformatterserver,&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;# slogfilter, slogfilterdebugtrue, slogfilterdebugfalse, slogfiltercallback&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;# sloghandler, sloghandlerstream, sloghandleremail&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;# slogger&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slogging_config" value="LOGGING_CONFIG = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;logging.config.dictConfig&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sloghandler" value="'$VAR1$': {&#10;    'level': '$VAR2$',&#10;    'filters': ['$VAR3$'],&#10;    'class': '$VAR4$',&#10;},$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;INFO&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sloghandleremail" value="'$VAR1$': {&#10;    'level': '$VAR2$',&#10;    'filters': ['$VAR3$'],&#10;    'class': 'django.utils.log.AdminEmailHandler'&#10;},$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;mail_admins&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;ERROR&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sloghandlerstream" value="'$VAR1$': {&#10;    'level': '$VAR2$',&#10;    'filters': ['$VAR3$'],&#10;    'class': 'logging.StreamHandler',&#10;},$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;console&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;INFO&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slogin_redirect_url" value="LOGIN_REDIRECT_URL = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;/accounts/profile/&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slogin_url" value="LOGIN_URL = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;/accounts/login/&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="slogout_redirect_url" value="LOGOUT_REDIRECT_URL = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="smanagers" value="MANAGERS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;ADMINS&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="smedia_root" value="MEDIA_ROOT = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="smedia_url" value="MEDIA_URL = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;/media/&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="smessage_level" value="MESSAGE_LEVEL = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;messages.INFO&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="smessage_storage" value="MESSAGE_STORAGE = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;django.contrib.messages.storage.fallback.FallbackStorage&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="smessage_tags" value="MESSAGE_TAGS = {&#10;    messages.DEBUG: '$VAR1$',&#10;    messages.INFO: '$VAR2$',&#10;    messages.SUCCESS: '$VAR3$',&#10;    messages.WARNING: '$VAR4$',&#10;    messages.ERROR: '$VAR5$',&#10;}&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;debug&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;info&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;success&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;warning&quot;" alwaysStopAt="true" />
+    <variable name="VAR5" expression="" defaultValue="&quot;error&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="smiddleware" value="MIDDLEWARE = [&#10;    'django.middleware.security.SecurityMiddleware',&#10;    'django.contrib.sessions.middleware.SessionMiddleware',&#10;    'django.middleware.common.CommonMiddleware',&#10;    'django.middleware.csrf.CsrfViewMiddleware',&#10;    'django.contrib.auth.middleware.AuthenticationMiddleware',&#10;    'django.contrib.messages.middleware.MessageMiddleware',&#10;    'django.middleware.clickjacking.XFrameOptionsMiddleware',&#10;]&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="smiddleware_classes" value="MIDDLEWARE_CLASSES = [&#10;    'django.middleware.common.CommonMiddleware',&#10;    'django.middleware.csrf.CsrfViewMiddleware',&#10;    '$VAR1$'&#10;]&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="smigration_modules" value="MIGRATION_MODULES = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;{}&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="smonth_day_format" value="MONTH_DAY_FORMAT = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;F j&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="snumber_grouping" value="NUMBER_GROUPING = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="spassword_hashers" value="PASSWORD_HASHERS = [&#10;    'django.contrib.auth.hashers.PBKDF2PasswordHasher',&#10;    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',&#10;    'django.contrib.auth.hashers.Argon2PasswordHasher',&#10;    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',&#10;    'django.contrib.auth.hashers.BCryptPasswordHasher',&#10;    '$VAR1$'&#10;]&#10;$END$&#10;" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="spassword_reset_timeout_days" value="PASSWORD_RESET_TIMEOUT_DAYS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;3&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sprepend_www" value="PREPEND_WWW = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sroot_urlconf" value="ROOT_URLCONF = '$VAR1$'" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssecret_key" value="SECRET_KEY = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssecure_browser_xss_filter" value="SECURE_BROWSER_XSS_FILTER = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssecure_content_type_nosniff" value="SECURE_CONTENT_TYPE_NOSNIFF = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssecure_hsts_include_subdomains" value="SECURE_HSTS_INCLUDE_SUBDOMAINS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssecure_hsts_seconds" value="SECURE_HSTS_SECONDS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssecure_proxy_ssl_header" value="SECURE_PROXY_SSL_HEADER = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssecure_redirect_exempt" value="SECURE_REDIRECT_EXEMPT = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;[]&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssecure_ssl_host" value="SECURE_SSL_HOST = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssecure_ssl_redirect" value="SECURE_SSL_REDIRECT = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sserialization_modules" value="SERIALIZATION_MODULES = {'$VAR1$' '$VAR2$'}" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;path.to.serializer&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sserver_email" value="SERVER_EMAIL = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;root@localhost&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssession_cache_alias" value="SESSION_CACHE_ALIAS = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;default&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssession_cookie_age" value="SESSION_COOKIE_AGE = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;60 * 60 * 24 * 7 * 2&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssession_cookie_domain" value="SESSION_COOKIE_DOMAIN = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssession_cookie_httponly" value="SESSION_COOKIE_HTTPONLY = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;True&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssession_cookie_name" value="SESSION_COOKIE_NAME = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;sessionid&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssession_cookie_path" value="SESSION_COOKIE_PATH = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssession_cookie_secure" value="SESSION_COOKIE_SECURE = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssession_engine" value="SESSION_ENGINE = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;django.contrib.sessions.backends.db&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssession_expire_at_browser_close" value="SESSION_EXPIRE_AT_BROWSER_CLOSE = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssession_file_path" value="SESSION_FILE_PATH = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssession_save_every_request" value="SESSION_SAVE_EVERY_REQUEST = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssession_serializer" value="SESSION_SERIALIZER = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;django.contrib.sessions.serializers.JSONSerializer&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sshort_date_format" value="SHORT_DATE_FORMAT = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;m/d/Y&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sshort_datetime_format" value="SHORT_DATETIME_FORMAT = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;m/d/Y P&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssigning_backend" value="SIGNING_BACKEND = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;django.core.signing.TimestampSigner&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssilenced_system_checks" value="SILENCED_SYSTEM_CHECKS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;[]&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ssite_id" value="SITE_ID = $VAR1$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sstatic_files_finders" value="STATICFILES_FINDERS = [&#10;    'django.contrib.staticfiles.finders.FileSystemFinder',&#10;    'django.contrib.staticfiles.finders.AppDirectoriesFinder',&#10;    $VAR1$&#10;]&#10;$END$&#10;" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sstatic_root" value="STATIC_ROOT = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sstatic_url" value="STATIC_URL = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;/static/&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sstaticfiles_dirs" value="STATICFILES_DIRS = [$VAR1$] $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sstaticfiles_storage" value="STATICFILES_STORAGE = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;django.contrib.staticfiles.storage.StaticFilesStorage&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="stemplates" value="TEMPLATES = [&#10;    {&#10;        'BACKEND': '$VAR1$',&#10;        'APP_DIRS': $VAR2$,&#10;        'DIRS': [&#10;            $VAR3$&#10;        ],&#10;        'OPTIONS': {$VAR4$},&#10;    },&#10;]&#10;$END$&#10;&#10;" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;django.template.backends.django.DjangoTemplates&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;True&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="stest_non_serialized_apps" value="TEST_NON_SERIALIZED_APPS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;[]&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="stest_runner" value="TEST_RUNNER = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;django.test.runner.DiscoverRunner&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sthousand_separator" value="THOUSAND_SEPARATOR = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;,&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="stime_format" value="TIME_FORMAT = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;P&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="stime_input_formats" value="TIME_INPUT_FORMATS = [&#10;    '%H:%M:%S',&#10;    '%H:%M:%S.%f',&#10;    '%H:%M',&#10;    '$VAR1$'&#10;]&#10;$END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="stime_zone" value="TIME_ZONE = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;America/Chicago&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="suse_etags" value="USE_ETAGS = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="suse_i18n" value="USE_I18N = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;True&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="suse_l10n" value="USE_L10N = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="suse_thousand_separator" value="USE_THOUSAND_SEPARATOR = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="suse_tz" value="USE_TZ = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="suse_x_forwarded_host" value="USE_X_FORWARDED_HOST = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="suse_x_forwarded_port" value="USE_X_FORWARDED_PORT = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="swsgi_application" value="WSGI_APPLICATION = $VAR1$ $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="sx_frame_options" value="X_FRAME_OPTIONS = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;SAMEORIGIN&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="syear_month_format" value="YEAR_MONTH_FORMAT = '$VAR1$' $END$" description="Django" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;F Y&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>

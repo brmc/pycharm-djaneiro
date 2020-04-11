@@ -1,0 +1,91 @@
+<templateSet group="Djaneiro: Postgres">
+  <template name="farray" value="$VAR1$ = SimpleArrayField(base_field=$VAR2$, max_length=$VAR3$, min_length=$VAR4$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="fdaterange" value="$VAR1$ = DateRangeField(min_value=$VAR2$, max_value=$VAR3$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="fdatetimerange" value="$VAR1$ = DateTimeRangeField(min_value=$VAR2$, max_value=$VAR3$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="ffloatrange" value="$VAR1$ = FloatRangeField(min_value=$VAR2$, max_value=$VAR3$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="fhstore" value="$VAR1$ = HStoreField($VAR2$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="fintrange" value="$VAR1$ = IntegerRangeField(min_value=$VAR2$, max_value=$VAR3$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="fjson" value="$VAR1$ = JSONField($VAR2$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="fsplitarray" value="$VAR1$ = SplitArrayField(base_field=$VAR2$, size=$VAR3$, remove_trailing_nulls=$VAR4$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR4" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="marray" value="$VAR1$ = fields.ArrayField(base_field=$VAR2$, size=$VAR3$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;None&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="mbigintrange" value="$VAR1$ = fields.BigIntegerRangeField($VAR2$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="mdaterange" value="$VAR1$ = fields.DateRangeField($VAR2$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="mdatetimerange" value="$VAR1$ = fields.DateTimeRangeField($VAR2$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="mfloatrange" value="$VAR1$ = fields.FloatRangeField($VAR2$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="mhstore" value="$VAR1$ = fields.HStoreField($VAR2$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="mintrange" value="$VAR1$ = fields.IntegerRangeField($VAR2$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="mjson" value="$VAR1$ = fields.JSONField($VAR2$)$END$" description="Django" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VAR1" expression="" defaultValue="&quot;FIELDNAME&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="END" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+  </template>
+</templateSet>
